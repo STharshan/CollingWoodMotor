@@ -51,25 +51,26 @@ const testimonials = [
       "I have used Collingwood motors for the last few years and always had great service. I had to have my car recovered recently due to breaking down and Simon had my car fixed and back on the road within a few hours and even lent me his coat as I had to hang around in the rain. I can not recommend this place enough!",
     author: "Emma Allen"
   },
-
 ];
 
 const ServiceScrolling = () => {
   return (
-    <section className="bg-black py-16 overflow-hidden">
+    <section className="bg-neutral-900 py-16 overflow-hidden transition-colors">
       <div className="w-[200%] animate-scroll flex space-x-6">
         {[...testimonials, ...testimonials].map((t, index) => (
           <div
             key={index}
-            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black p-6 rounded shadow-md"
+            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] 
+            bg-white dark:bg-black text-black dark:text-white 
+            p-6 rounded shadow-md transition-colors"
           >
             <p className="text-sm mb-4">"{t.quote}"</p>
             <p className="font-bold text-sm uppercase">{t.author}</p>
-            <p className="text-xs text-gray-500 mt-2">Google Reviews</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">Google Reviews</p>
           </div>
         ))}
       </div>
-
+      {/* Animation style */}
       <style jsx>{`
         @keyframes scroll {
           0% {

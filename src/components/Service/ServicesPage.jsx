@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "WINDOW TINT",
-    desc: "We offer proffessional window tinting for a sleek look and enhanced comfor",
+    desc: "We offer proffessional window tinting for a sleek look and enhanced comfort",
     img: "/bule.avif",
     path: "/services/window-tint",
   },
@@ -31,7 +31,7 @@ const services = [
     title: "SERVICE",
     desc: "Comprehensive car servicing to ensure your vehicle runs smoothy and efficiently!",
     img: "/gray.avif",
-    path: "services/service",
+    path: "/services/service",
   },
   {
     title: "BELTS/CHAINS",
@@ -43,21 +43,19 @@ const services = [
     title: "DIAGNOSTICS",
     desc: "We offer the laest dealer-level diagnostics",
     img: "/homepaint.avif",
-    path: "services/diagnostics",
+    path: "/services/diagnostics",
   },
-
 ];
 
 const ServicesPage = () => {
   return (
-    <div className="text-white">
-
+    <div className="text-black dark:text-white bg-white dark:bg-black transition-colors">
       {/* Services Title */}
-      <section className="text-center py-12 px-4 bg-white text-black">
-        <h2 className="text-3xl md:text-4xl font-bold ">
+      <section className="text-center py-12 px-4 bg-white dark:bg-black text-black dark:text-white transition-colors">
+        <h2 className="text-3xl md:text-4xl font-bold">
           OUR SERVICES
         </h2>
-        <p className="text-gray-600 mt-10 text-xl max-w-xs mx-auto">
+        <p className="text-gray-600 dark:text-gray-300 mt-10 text-xl max-w-xs mx-auto">
           From minor fixes to major repairs, we’ve got you covered.
         </p>
       </section>
@@ -67,22 +65,24 @@ const ServicesPage = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded bg-black"
+            className="relative group overflow-hidden rounded bg-neutral-900 transition-colors"
           >
             <img
               src={service.img}
               alt={service.title}
-              className="w-full h-60 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105 "
+              className="w-full h-60 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
             />
             <div className="absolute mt-10 left-4 right-4 z-10">
-              <h3 className=" font-semibold text-lg mb-4">
+              <h3 className="font-semibold text-lg mb-4 text-white dark:text-blue-400 drop-shadow">
                 {service.title}
               </h3>
-              <p className="text-sm text-white mb-10">{service.desc}</p>
+              <p className="text-sm text-white dark:text-gray-200 mb-10">{service.desc}</p>
               <Link to={service.path}>
-                <button className="flex items-center space-x-4 px-6 py-2.5 border border-gray-600 rounded-full cursor-pointer text-xs transition duration-200 font-semibold">
-                  <span className="transition-transform duration-300 group-hover:-translate-x-2">EXPLORE</span>
-                  <FaArrowRight className="text-blue-600 transition-transform duration-300 group-hover:translate-x-2" size={12} />
+                <button className="flex items-center space-x-4 px-6 py-2.5 border border-gray-600 dark:border-gray-400 bg-black rounded-full cursor-pointer text-xs transition duration-200 font-semibold text-white dark:text-gray-200">
+                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                    EXPLORE
+                  </span>
+                  <FaArrowRight className="text-blue-600 dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" size={12} />
                 </button>
               </Link>
             </div>

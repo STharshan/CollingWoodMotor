@@ -13,7 +13,7 @@ const GallerySlider = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <img
-          src="/" // Replace with your award logo
+          src="/tittle.png" // Replace with your award logo
           alt="Best of Leicester 2024"
           className="mx-auto mb-6 w-32 sm:w-40"
         />

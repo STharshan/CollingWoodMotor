@@ -25,21 +25,21 @@ const testimonials = [
 
 const ScrollingTestimonials = () => {
   return (
-    <section className="bg-black py-16 overflow-hidden">
+    <section className="bg-black/90 py-16 overflow-hidden">
       <div className="w-[200%] animate-scroll flex space-x-6">
         {[...testimonials, ...testimonials].map((t, index) => (
           <div
             key={index}
-            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black p-6 rounded shadow-md"
+            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black dark:bg-black dark:text-white p-6 rounded shadow-md"
           >
             <p className="text-sm mb-4">"{t.quote}"</p>
             <p className="font-bold text-sm uppercase">{t.author}</p>
-            <p className="text-xs text-gray-500">Google Reviews</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">Google Reviews</p>
           </div>
         ))}
       </div>
 
-      <style jsx>{`
+      <style jsx="true">{`
         @keyframes scroll {
           0% {
             transform: translateX(0%);

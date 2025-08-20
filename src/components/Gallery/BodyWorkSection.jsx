@@ -3,10 +3,12 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const BodyWorkSection = () => {
   return (
-    <section className="bg-white py-20 px-4 text-center relative">
+    <section className="bg-white dark:bg-black py-20 px-4 text-center relative transition-colors">
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold mb-3">COMING SOON</h2>
-      <p className="text-gray-500 text-lg mb-8">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-black dark:text-white">
+        COMING SOON
+      </h2>
+      <p className="text-gray-500 dark:text-gray-300 text-lg mb-8">
         Keep your eyes peeled for the big announcement
       </p>
 
@@ -26,9 +28,11 @@ const BodyWorkSection = () => {
         </div>
       </div>
       {/* Contact Button */}
-      <button className="mt-6 text-blue-600 bg-black cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
-        <span className="transition-transform duration-300 group-hover:-translate-x-2">CONTACT US</span>
-        <FaArrowRight className="text-blue-600 transition-transform duration-300 group-hover:translate-x-2" />
+      <button className="mt-6 text-blue-600 dark:text-blue-400 bg-neutral-900 cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
+        <span className="transition-transform duration-300 group-hover:-translate-x-2">
+          CONTACT US
+        </span>
+        <FaArrowRight className="text-blue-600 dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" />
       </button>
     </section>
   );

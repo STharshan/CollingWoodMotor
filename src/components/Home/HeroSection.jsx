@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full min-h-screen text-white">
+        <section className="relative w-full min-h-screen text-white mb-20">
             {/* Background Video */}
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -47,7 +47,7 @@ const HeroSection = () => {
                 </button>
 
                 {/* Badge Row */}
-                <div className="mt-16 flex flex-wrap justify-center gap-4 text-sm">
+                <div className="mt-16 flex flex-wrap justify-center gap-4 text-sm mb-15">
                     <div className="flex items-center gap-2 font-semibold px-3 py-1 rounded">
                         <FaArrowRight className="bg-blue-600 text-black w-8 h-5" /> Fast Service
                     </div>
@@ -58,32 +58,32 @@ const HeroSection = () => {
             </div>
 
             {/* Bottom Info Bar */}
-            <div className="absolute left-0 w-full z-10 px-4 bottom-10 border-t border-gray-700 pt-5">
-    <div className="mx-auto bg-black bg-opacity-70 backdrop-blur-sm flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg max-w-6xl">
-        
-        {/* Rating Section - Shows first on mobile, second on desktop */}
-        <div className="flex items-center gap-3 bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
-            {/* Stars */}
-            <div className="flex text-yellow-400 text-lg">
-                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-            </div>
-            
-            {/* Rating Text */}
-            <span className="text-white text-sm font-medium">4.7/5 from</span>
-            
-            {/* Reviews Badge */}
-            <span className="bg-gray-800 border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
-                84+ Reviews
-            </span>
-        </div>
+            <div className="absolute left-0 w-full z-10 border-t border-gray-700">
+                <div className="mx-auto bg-black bg-opacity-70 backdrop-blur-sm flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
 
-        {/* TRC Logo - Shows second on mobile, first on desktop */}
-        <div className="flex items-center order-2 sm:order-1">
-            <img src="trc.png" alt="TRC Logo" className="w-42 h-20 object-contain md:w-40 md:h-20" />
-        </div>
-        
-    </div>
-</div>
+                    {/* Rating Section - Shows first on mobile, second on desktop */}
+                    <div className="flex items-center gap-3 bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+                        {/* Stars */}
+                        <div className="flex text-yellow-400 text-lg">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+
+                        {/* Rating Text */}
+                        <span className="text-white text-sm font-medium">4.7/5 from</span>
+
+                        {/* Reviews Badge */}
+                        <span className="bg-gray-800 border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
+                            84+ Reviews
+                        </span>
+                    </div>
+
+                    {/* TRC Logo - Shows second on mobile, first on desktop */}
+                    <div className="flex items-center order-2 sm:order-1">
+                        <img src="trc.png" alt="TRC Logo" className="w-42 h-20 object-contain md:w-40 md:h-20" />
+                    </div>
+
+                </div>
+            </div>
 
         </section>
     );
