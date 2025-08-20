@@ -4,13 +4,13 @@ import { FaRegStar } from 'react-icons/fa';
 
 const features = [
   {
-    icon: <FaRegStar className="text-black dark:text-yellow-300 text-xl" />,
+    icon: <FaRegStar className="text-black text-2xl" />,
     title: 'BEST OF LEICESTER',
     description:
       'We were proudly voted Best in Leicester by Preferred Mechanic—a testament to our expertise, reliable service, and commitment to putting our customers first.',
   },
   {
-    icon: <BiSolidTorch className="text-black dark:text-yellow-300 text-xl" />,
+    icon: <BiSolidTorch className="text-black text-2xl" />,
     title: 'Best Family Run Vehicle Repair Garage 2024 - Leicester',
     description:
       'This award reflects our dedication to expert service, honest advice, and treating every customer like family.',
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
             <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-blue-600 dark:border-blue-400 rounded-bl-xl"></div>
 
             {/* Icon */}
-            <div className="inline-block bg-gradient-to-b from-yellow-100 to-blue-600 dark:from-yellow-900 dark:to-blue-900 p-3 rounded mb-6 transition-colors duration-300">
+            <div className="inline-block bg-gradient-to-b from-white to-blue-600 p-3 rounded mb-6 transition-colors duration-300">
               {feature.icon}
             </div>
 
