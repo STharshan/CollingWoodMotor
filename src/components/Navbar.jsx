@@ -26,45 +26,15 @@ const Navbar = () => {
 
       <div className="relative max-w-7xl mx-auto flex items-center justify-between px-4">
         {/* Logo */}
-        <img src="/logo.avif" alt="Logo" className="h-20 object-contain xl:ml-15" />
+        <img src="/logo.avif" alt="Logo" className="h-20 object-contain" />
 
         {/* Desktop Menu */}
         <div className="hidden sm:flex space-x-8">
+          <a href="/" className='hover:text-blue-400'>HOME</a>
           <a href="/about" className="hover:text-blue-400">ABOUT</a>
           <a href="/gallery" className="hover:text-blue-400">GALLERY</a>
           <a href="/pricing" className="hover:text-blue-400">PRICING</a>
-
-          {/* Desktop Dropdown (click-based) */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setDesktopDropdown(!desktopDropdown)}
-              className="hover:text-blue-400 flex items-center"
-            >
-              SERVICES AND MORE{" "}
-              {desktopDropdown ? (
-                <FaChevronUp className="ml-1 text-xs" />
-              ) : (
-                <FaChevronDown className="ml-1 text-xs" />
-              )}
-            </button>
-
-            {desktopDropdown && (
-              <div className="absolute top-full mt-4 right-0 w-[400px] bg-white dark:bg-[#242427] text-black dark:text-white px-6 py-4 rounded-lg shadow-xl">
-                <div className="flex space-x-6">
-                  <div className="space-y-2 pr-20">
-                    <a href="/" className="hover:text-blue-400 block">Home</a>
-                    <a href="/about" className="hover:text-blue-400 block">About</a>
-                    <a href="/services" className="hover:text-blue-400 block">Services</a>
-                    <a href="/gallery" className="hover:text-blue-400 block">Gallery</a>
-                  </div>
-                  <div className="border-l border-gray-300 dark:border-gray-600"></div>
-                  <div className="space-y-2 pl-4">
-                    <a href="/pricing" className="hover:text-blue-400 block">Pricing</a>
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          <a href="/services" className="hover:text-blue-400">SERVICES</a>
         </div>
 
         {/* Theme toggle (desktop) */}
@@ -86,30 +56,11 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="sm:hidden mt-3 pt-3 px-4 pb-6 space-y-4 text-white bg-[#242427]/95 dark:bg-[#242427]/95">
+          <a href="/" className="block border-b border-gray-400 pb-2 hover:text-blue-400">HOME</a>
           <a href="/about" className="block border-b border-gray-400 pb-2 hover:text-blue-400">ABOUT</a>
           <a href="/gallery" className="block border-b border-gray-400 pb-2 hover:text-blue-400">GALLERY</a>
           <a href="/pricing" className="block border-b border-gray-400 pb-2 hover:text-blue-400">PRICING</a>
-
-          {/* Mobile Dropdown */}
-          <div className="border-b border-gray-400 pb-3">
-            <div
-              onClick={() => setMobileDropdown(!mobileDropdown)}
-              className="flex justify-between items-center cursor-pointer uppercase hover:text-blue-400"
-            >
-              <span>SERVICES AND MORE</span>
-              {mobileDropdown ? <FaChevronUp /> : <FaChevronDown />}
-            </div>
-
-            {mobileDropdown && (
-              <div className="mt-4 grid grid-cols-2 gap-x-10 gap-y-2 text-sm">
-                <a href="/" onClick={() => setMenuOpen(false)} className='hover:text-blue-400'>Home</a>
-                <a href="/pricing" onClick={() => setMenuOpen(false)} className='hover:text-blue-400'>Pricing</a>
-                <a href="/about" onClick={() => setMenuOpen(false)} className='hover:text-blue-400'>About</a>
-                <a href="/services" onClick={() => setMenuOpen(false)} className='hover:text-blue-400'>Services</a>
-                <a href="/gallery" onClick={() => setMenuOpen(false)} className='hover:text-blue-400'>Gallery</a>
-              </div>
-            )}
-          </div>
+          <a href="/pricing" className="block border-b border-gray-400 pb-2 hover:text-blue-400">SERVICES</a>
         </div>
       )}
     </nav>

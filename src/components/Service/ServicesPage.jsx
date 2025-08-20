@@ -11,13 +11,13 @@ const services = [
   },
   {
     title: "WINDOW TINT",
-    desc: "We offer proffessional window tinting for a sleek look and enhanced comfort",
+    desc: "We offer professional window tinting for a sleek look and enhanced comfort",
     img: "/bule.avif",
     path: "/services/window-tint",
   },
   {
     title: "WHEEL ALIGNMENT",
-    desc: "We provide wheel alignment with the added benifit of improved vehicle perfomance and tire longvity",
+    desc: "We provide wheel alignment with the added benefit of improved vehicle performance and tire longevity",
     img: "/paint.webp",
     path: "/services/wheel-alignment",
   },
@@ -29,19 +29,19 @@ const services = [
   },
   {
     title: "SERVICE",
-    desc: "Comprehensive car servicing to ensure your vehicle runs smoothy and efficiently!",
+    desc: "Comprehensive car servicing to ensure your vehicle runs smoothly and efficiently!",
     img: "/gray.avif",
     path: "/services/service",
   },
   {
     title: "BELTS/CHAINS",
-    desc: "Experts in timing chains, timing belts and one of the few wet timing chain specialist",
+    desc: "Experts in timing chains, timing belts, and one of the few wet timing chain specialists",
     img: "/shine.webp",
     path: "/services/belts-chains",
   },
   {
     title: "DIAGNOSTICS",
-    desc: "We offer the laest dealer-level diagnostics",
+    desc: "We offer the latest dealer-level diagnostics",
     img: "/homepaint.avif",
     path: "/services/diagnostics",
   },
@@ -61,18 +61,18 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-6 pb-20 max-w-6xl mx-auto h-1050 md:h-400">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-6 pb-20 max-w-6xl mx-auto h-1050 md:h-450">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded bg-neutral-900 transition-colors"
+            className="relative group overflow-hidden rounded bg-neutral-900 transition-colors flex flex-col justify-between"
           >
             <img
               src={service.img}
               alt={service.title}
-              className="w-full h-60 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
+              className="w-full h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
             />
-            <div className="absolute mt-10 left-4 right-4 z-10">
+            <div className="absolute bottom-6 left-4 right-4 z-10">
               <h3 className="font-semibold text-lg mb-4 text-white dark:text-blue-400 drop-shadow">
                 {service.title}
               </h3>
