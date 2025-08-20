@@ -13,7 +13,7 @@ import Mechanical from './pages/ExtraServices/Mechanical';
 import Belts from './pages/ExtraServices/Belts';
 import BodyService from './pages/ExtraServices/BodyService';
 import Diagnostics from './pages/ExtraServices/Diagnostics';
-import ScrollToTop from '../../doggromming/src/components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
