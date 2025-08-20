@@ -26,10 +26,10 @@ const Navbar = () => {
 
       <div className="relative max-w-7xl mx-auto flex items-center justify-between px-4">
         {/* Logo */}
-        <img src="/logo.avif" alt="Logo" className="h-20 object-contain ml-15" />
+        <img src="/logo.avif" alt="Logo" className="h-20 object-contain xl:ml-15" />
 
         {/* Desktop Menu */}
-        <div className="hidden xl:flex space-x-8">
+        <div className="hidden sm:flex space-x-8">
           <a href="/about" className="hover:text-blue-400">ABOUT</a>
           <a href="/gallery" className="hover:text-blue-400">GALLERY</a>
           <a href="/pricing" className="hover:text-blue-400">PRICING</a>
@@ -42,9 +42,9 @@ const Navbar = () => {
             >
               SERVICES AND MORE{" "}
               {desktopDropdown ? (
-                <FaChevronUp className="ml-1 mt-1 text-xs" />
+                <FaChevronUp className="ml-1 text-xs" />
               ) : (
-                <FaChevronDown className="ml-1 mt-1 text-xs" />
+                <FaChevronDown className="ml-1 text-xs" />
               )}
             </button>
 
@@ -73,7 +73,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Icon */}
-        <div className="xl:hidden">
+        <div className="sm:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="p-2 border border-white rounded-full"
@@ -85,7 +85,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="xl:hidden mt-3 px-4 pb-6 space-y-4 text-white bg-[#242427]/95 dark:bg-[#242427]/95">
+        <div className="sm:hidden mt-3 pt-3 px-4 pb-6 space-y-4 text-white bg-[#242427]/95 dark:bg-[#242427]/95">
           <a href="/about" className="block border-b border-gray-400 pb-2 hover:text-blue-400">ABOUT</a>
           <a href="/gallery" className="block border-b border-gray-400 pb-2 hover:text-blue-400">GALLERY</a>
           <a href="/pricing" className="block border-b border-gray-400 pb-2 hover:text-blue-400">PRICING</a>
@@ -94,7 +94,7 @@ const Navbar = () => {
           <div className="border-b border-gray-400 pb-3">
             <div
               onClick={() => setMobileDropdown(!mobileDropdown)}
-              className="flex justify-between items-center cursor-pointer uppercase"
+              className="flex justify-between items-center cursor-pointer uppercase hover:text-blue-400"
             >
               <span>SERVICES AND MORE</span>
               {mobileDropdown ? <FaChevronUp /> : <FaChevronDown />}
