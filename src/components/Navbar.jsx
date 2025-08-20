@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import Theme from '../../../AutoCraft/src/components/Theme';
-
+import Theme from './Theme';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
