@@ -48,21 +48,23 @@ const services = [
 ];
 
 const ServicesPage = () => {
+  const isOdd = services.length % 2 !== 0;
+  const mainServices = isOdd ? services.slice(0, -1) : services;
+  const lastService = isOdd ? services[services.length - 1] : null;
+
   return (
     <div className="text-black dark:text-white bg-white dark:bg-black transition-colors">
       {/* Services Title */}
       <section className="text-center py-12 px-4 bg-white dark:bg-black text-black dark:text-white transition-colors">
-        <h2 className="text-3xl md:text-4xl font-bold">
-          OUR SERVICES
-        </h2>
+        <h2 className="text-3xl md:text-4xl font-bold">OUR SERVICES</h2>
         <p className="text-gray-600 dark:text-gray-300 mt-10 text-xl max-w-xs mx-auto">
           From minor fixes to major repairs, we’ve got you covered.
         </p>
       </section>
 
-      {/* Services Grid */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-6 pb-20 max-w-6xl mx-auto h-1050 md:h-450">
-        {services.map((service, index) => (
+      {/* Main Services Grid */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 px-6 pb-20 max-w-6xl mx-auto h-290">
+        {mainServices.map((service, index) => (
           <div
             key={index}
             className="relative group overflow-hidden rounded bg-neutral-900 transition-colors flex flex-col justify-between"
@@ -89,6 +91,33 @@ const ServicesPage = () => {
           </div>
         ))}
       </section>
+
+      {/* Last Card Centered */}
+      {lastService && (
+        <section className="flex justify-center px-6 pb-20 max-w-6xl mx-auto h-150">
+          <div className="relative group overflow-hidden rounded bg-neutral-900 transition-colors flex flex-col justify-between w-full sm:w-1/2 lg:w-1/3">
+            <img
+              src={lastService.img}
+              alt={lastService.title}
+              className="w-full h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
+            />
+            <div className="absolute bottom-6 left-4 right-4 z-10">
+              <h3 className="font-semibold text-lg mb-4 text-white dark:text-blue-400 drop-shadow">
+                {lastService.title}
+              </h3>
+              <p className="text-sm text-white dark:text-gray-200 mb-10">{lastService.desc}</p>
+              <Link to={lastService.path}>
+                <button className="flex items-center space-x-4 px-6 py-2.5 border border-gray-600 dark:border-gray-400 bg-black rounded-full cursor-pointer text-xs transition duration-200 font-semibold text-white dark:text-gray-200">
+                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
+                    EXPLORE
+                  </span>
+                  <FaArrowRight className="text-blue-600 dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" size={12} />
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 };

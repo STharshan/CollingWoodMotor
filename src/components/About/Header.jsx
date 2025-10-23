@@ -17,7 +17,7 @@ const Header = () => {
       <div className="absolute inset-0 bg-black opacity-80"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white max-w-3xl mt-30">
+      <div className="relative z-10 text-center text-white max-w-3xl mt-10">
         {/* Rating Badge */}
         <div className="mb-6 inline-flex items-center gap-3 border border-gray-700 rounded-full px-5 py-2 text-sm font-medium">
           <div className="flex text-yellow-400 space-x-1">

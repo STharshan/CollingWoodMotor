@@ -4,7 +4,7 @@ import { FaArrowRight, FaFacebook, FaInstagram, FaStar } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 text-black dark:text-gray-200 text-sm transition-colors duration-300">
-      <div className="mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 xl:gap-50 items-start">
+      <div className="mx-auto px-8 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 xl:gap-50 items-start">
         {/* Left - Google Map */}
         <div className="w-full">
           <iframe

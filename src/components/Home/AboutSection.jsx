@@ -60,10 +60,10 @@ const AboutSection = () => {
             />
 
             {/* Right full border */}
-            <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-yellow-400"></div>
+            <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-blue-600"></div>
 
             {/* Bottom fixed half-border */}
-            <div className="absolute bottom-0 left-0 w-full h-[15px] bg-gradient-to-r from-transparent to-yellow-400"></div>
+            <div className="absolute bottom-0 left-0 w-full h-[15px] bg-gradient-to-r from-transparent to-blue-600"></div>
           </div>
 
           {/* Overlapping small image */}

@@ -30,14 +30,14 @@ const services = [
 
 const PricingTable = () => {
   return (
-    <section className="bg-black text-white py-10 px-4">
+    <section className="dark:bg-black  dark:text-white py-10 px-4">
       <div className="w-full max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-center text-xl sm:text-2xl mb-2 tracking-wide">Pricing</h2>
         <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-[#0093FF] mb-2 tracking-wide">
           SERVICING
         </h2>
-        <p className="text-center text-sm sm:text-base text-gray-200 mb-10">
+        <p className="text-center text-sm sm:text-base dark:text-gray-200 mb-10">
           Prices include up to 7.5 litres of premium-grade oil, ensuring the best performance in the game.
         </p>
 

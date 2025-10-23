@@ -25,7 +25,7 @@ function HighlightSymbol({ value }) {
 
 const ProvenResultsSection = () => {
   return (
-    <section className="bg-white dark:bg-black py-20 px-4 text-center transition-colors">
+    <section className="bg-white dark:bg-black py-10 px-4 text-center transition-colors">
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-black dark:text-white">
         PROVEN RESULTS

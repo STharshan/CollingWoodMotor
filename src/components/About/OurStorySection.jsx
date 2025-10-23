@@ -2,7 +2,7 @@ import React from 'react';
 
 const OurStorySection = () => {
   return (
-    <section className="bg-white dark:bg-black py-20 px-6 md:px-12 lg:px-24 text-center transition-colors duration-300">
+    <section className="bg-white dark:bg-black py-15 px-6 md:px-12 lg:px-24 text-center transition-colors duration-300">
       {/* Tagline */}
       <div className="mb-4 flex justify-center items-center space-x-2">
         <span className="w-6 h-px bg-blue-600 rotate-135"></span>
@@ -15,7 +15,7 @@ const OurStorySection = () => {
       </h2>
 
       {/* Paragraph */}
-      <p className="max-w-md mx-auto text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed">
+      <p className="max-w-3xl mx-auto text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed">
         Welcome to Collingwood Motors, proudly voted the
         <strong> Best Family-Run Repair Garage of 2024</strong> and recognized as
         the <strong> Best of Leicester</strong> by Preferred Mechanic. We’re more than just a repair shop — we’re a dedicated team
