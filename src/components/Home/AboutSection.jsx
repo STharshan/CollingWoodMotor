@@ -43,7 +43,7 @@ const AboutSection = () => {
 
           {/* Testimonial */}
           <div className="mt-10 text-md text-gray-600 dark:text-gray-400">
-            <p className="italic mb-2 max-w-md">
+            <p className="mb-2 max-w-md">
               "Great garage, both myself and my husband have been coming here for the past 5-6 years. Never had any issues, Simon is always transparent regarding repairs and they are done as soon as the parts are in. Our car/van are always safe for us to drive. Honestly and reliability is what matters to us and that’s why we return every year. Highly recommend 5**"
             </p>
             <p className="text-black dark:text-white font-medium mt-10">Heidi Goodwin</p>

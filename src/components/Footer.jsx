@@ -19,53 +19,68 @@ const Footer = () => {
         </div>
 
         {/* Right - Contact + Socials */}
-        <div className="flex flex-col justify-between mx-auto">
+        <div className="flex flex-col justify-between mx-auto w-full">
           <div className="space-y-4">
-            {/* Phone number 1 - redirect to WhatsApp */}
+            {/* Phone number 1 */}
             <a
               href="tel:+441162512661"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2 hover:border-blue-600 dark:hover:border-blue-400 cursor-pointer"
+              className="group flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2 hover:border-[#028BFA] dark:hover:border-blue-400 cursor-pointer"
             >
               <span className="transition-transform duration-500 group-hover:translate-x-2">
                 0116 251 2661
               </span>
-              <FaArrowRight className="text-gray-500 dark:text-gray-300 transition-transform duration-500 group-hover:-translate-x-2" size={12} />
+              <FaArrowRight
+                className="text-gray-500 dark:text-gray-300 transition-transform duration-500 group-hover:-translate-x-2"
+                size={12}
+              />
             </a>
 
-            {/* Phone number 2 - redirect to WhatsApp */}
+            {/* Phone number 2 */}
             <a
               href="https://wa.me/+447564693973?text=Hi%20I%20would%20like%20to%20contact%20you"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2 hover:border-blue-600 dark:hover:border-blue-400 cursor-pointer"
+              className="group flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2 hover:border-[#028BFA] dark:hover:border-blue-400 cursor-pointer"
             >
               <span className="transition-transform duration-500 group-hover:translate-x-2">
                 07564693973
               </span>
-              <FaArrowRight className="text-gray-500 dark:text-gray-300 transition-transform duration-500 group-hover:-translate-x-2" size={12} />
+              <FaArrowRight
+                className="text-gray-500 dark:text-gray-300 transition-transform duration-500 group-hover:-translate-x-2"
+                size={12}
+              />
             </a>
           </div>
 
-          <div className="mt-10 space-y-4">
+          {/* Reviews + Socials stacked but aligned right */}
+          <div className="mt-35 w-full relative">
             {/* Reviews Section */}
             <div className="flex items-center gap-4 border border-gray-300 dark:border-gray-700 px-4 py-4 rounded-full w-max bg-white dark:bg-neutral-900 transition-colors duration-300">
               <div className="flex items-center text-yellow-400">
                 <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
               </div>
               <span className="text-gray-700 dark:text-gray-200 font-semibold text-sm">4.7/5 from</span>
-              <span className="bg-white dark:bg-black rounded-full px-2 py-0.5 text-xs font-semibold text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-800">
+              <span className="rounded-full px-2 py-1 text-xs font-semibold text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-800">
                 84+ Reviews
               </span>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex items-center gap-4 justify-start">
-              <a href="https://web.facebook.com/Collingwoodmotorsmotcentre/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={32} className="text-blue-600 w-15 h-15" />
+            {/* Social Icons - under review, right aligned */}
+            <div className="flex items-center gap-4 justify-center -ml-30 mt-6">
+              <a
+                href="https://web.facebook.com/Collingwoodmotorsmotcentre/?_rdc=1&_rdr#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook size={32} className="text-[#028BFA] w-15 h-15" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram size={32} className="text-pink-500 w-15 h-15" />
               </a>
             </div>
@@ -81,7 +96,7 @@ const Footer = () => {
           href="https://www.ansely.co.uk/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:underline hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          className="hover:underline hover:text-[#028BFA] dark:hover:text-blue-400 transition-colors"
         >
           Ansely
         </a>
