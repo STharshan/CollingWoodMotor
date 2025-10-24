@@ -7,6 +7,7 @@ const stats = [
 ];
 
 function HighlightSymbol({ value }) {
+  // Match number(s) + symbol(s)
   const match = value.match(/^([\d.]+)([%+])?(\/\d)?$/);
   if (!match) return value;
   const [, num, symbol, fraction] = match;
@@ -14,7 +15,9 @@ function HighlightSymbol({ value }) {
   return (
     <span>
       <span>{num}</span>
-      {symbol && <span className="text-blue-500">{symbol}</span>}
+      {symbol && (
+        <span className="text-blue-500">{symbol}</span>
+      )}
       {fraction && <span>{fraction}</span>}
     </span>
   );
@@ -27,23 +30,22 @@ const ProvenResultsSection = () => {
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-black dark:text-white">
         PROVEN RESULTS
       </h2>
-      <p className="text-gray-500 dark:text-gray-300 mb-12 text-lg mt-2">
-        Discover the stats that highlight our success and dedication
+      <p className="text-gray-500 dark:text-gray-300 mb-12 text-lg mt-8">
+        Discover the stats that highlight<br className="hidden sm:block" />
+        our success and dedication
       </p>
 
       {/* Cards */}
-      <div className="flex flex-col md:flex-row justify-center items-start gap-6 max-w-7xl mx-auto">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 max-w-7xl mx-auto">
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="w-56 h-40 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-md flex flex-col justify-center p-4 transition duration-300"
+            className="w-150 h-100 bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center justify-center"
           >
-            <div className="text-5xl font-bold text-black dark:text-white mb-4">
+            <div className="text-4xl sm:text-5xl font-bold text-black dark:text-white">
               <HighlightSymbol value={stat.value} />
             </div>
-            <div className="text-gray-400 dark:text-gray-500 text-sm text-left mt-auto">
-              {stat.label}
-            </div>
+            <div className="text-lg text-gray-500 dark:text-gray-400">{stat.label}</div>
           </div>
         ))}
       </div>
