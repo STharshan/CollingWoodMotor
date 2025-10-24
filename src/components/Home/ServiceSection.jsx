@@ -53,7 +53,7 @@ export default function ServiceSection() {
 
   const scroll = (dir) => {
     if (scrollRef.current) {
-      const cardWidth = scrollRef.current.firstChild.offsetWidth + 24;
+      const cardWidth = scrollRef.current.firstChild.offsetWidth + 24; // card + gap
       scrollRef.current.scrollBy({
         left: dir === "left" ? -cardWidth * 3 : cardWidth * 3,
         behavior: "smooth",
@@ -68,7 +68,6 @@ export default function ServiceSection() {
         <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
           {/* Rating Section */}
           <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
-            {/* Stars */}
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
               <span>★</span>
@@ -76,34 +75,24 @@ export default function ServiceSection() {
               <span>★</span>
               <span>★</span>
             </div>
-            {/* Rating Text */}
-            <span className=" text-sm font-medium text-black dark:text-white">5/5 from</span>
-            {/* Reviews Badge */}
+            <span className="text-sm font-medium text-black dark:text-white">5/5 from</span>
             <span className="bg-secondary border text-black dark:text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
               84+ Reviews
             </span>
           </div>
-
-          {/* TRC Logo */}
-          {/* <div className="flex items-center order-2 sm:order-1">
-            <img
-              src="trc.png"
-              alt="TRC Logo"
-              className="w-42 h-20 object-contain md:w-40 md:h-20"
-            />
-          </div> */}
         </div>
       </div>
-      <div className="max-w-7xl mb-20 mx-auto relative">
-        {/* Section Title */}
+
+      {/* Section Title */}
+      <div className="max-w-7xl mb-20 mx-auto text-center">
         <h2
-          className="text-center text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
+          className="text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
           data-aos="fade-down"
         >
           Our <span className="dark:text-white text-gray-700">Services</span>
         </h2>
         <p
-          className="text-center text-lg dark:text-white mb-8"
+          className="text-lg dark:text-white mb-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -111,7 +100,7 @@ export default function ServiceSection() {
         </p>
       </div>
 
-      {/* Wrapper */}
+      {/* Scrollable Cards */}
       <div className="relative max-w-7xl mx-auto">
         {/* Left Arrow */}
         <button
@@ -121,7 +110,7 @@ export default function ServiceSection() {
           <FaArrowLeft />
         </button>
 
-        {/* Scroll Cards */}
+        {/* Cards Wrapper */}
         <div
           ref={scrollRef}
           className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 px-16 snap-x snap-mandatory"
@@ -129,26 +118,26 @@ export default function ServiceSection() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative snap-start min-w-[360px] md:min-w-[400px] h-[430px] flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group"
+              className="relative snap-start w-[360px] md:w-[400px] h-[570px] transition-colors flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
             >
               {/* Image */}
               <img
                 src={service.image}
                 alt={service.title}
-                className="absolute inset-0 w-full h-full object-cover object-center brightness-[1.1] contrast-[1.05] transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110"
+                className="w-full h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/80 group-hover:via-black/30 group-hover:to-black/60 transition-all duration-700"></div>
-
               {/* Content */}
-              <div className="absolute bottom-8 left-6 right-6 z-10">
-                <h3 className="text-lg font-bold mb-2 tracking-wide drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
+              <div className="flex flex-col flex-1 justify-between p-4 relative">
+                {/* Title */}
+                <h3 className="font-semibold text-lg mb-2 text-white dark:text-blue-400 drop-shadow">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                  {service.desc}
-                </p>
+
+                {/* Description */}
+                <p className="text-sm text-white dark:text-gray-200 flex-1">{service.desc}</p>
+
+                {/* Explore Button */}
                 <Link to={service.path}>
                   <button className="relative bg-[#1a1a1a] text-white cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden border border-white/10 hover:border-[#028BFA]/50">
                     <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
@@ -158,8 +147,6 @@ export default function ServiceSection() {
                       EXPLORE
                     </span>
                   </button>
-
-
                 </Link>
               </div>
             </div>

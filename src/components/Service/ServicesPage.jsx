@@ -80,12 +80,14 @@ const ServicesPage = () => {
               </h3>
               <p className="text-sm text-white dark:text-gray-200 mb-10">{service.desc}</p>
               <Link to={service.path}>
-                <button className="flex items-center space-x-4 px-6 py-2.5 border border-gray-600 dark:border-gray-400 bg-black rounded-full cursor-pointer text-xs transition duration-200 font-semibold text-white dark:text-gray-200">
-                  <span className="transition-transform duration-300 group-hover:-translate-x-2">
-                    EXPLORE
-                  </span>
-                  <FaArrowRight className="text-blue-600 dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" size={12} />
-                </button>
+                 <button className="relative bg-[#1a1a1a] text-white cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden border border-white/10 hover:border-[#028BFA]/50">
+                    <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+                      /
+                    </span>
+                    <span className="tracking-wider text-sm group-hover:text-[#028BFA] transition-colors duration-300">
+                      EXPLORE
+                    </span>
+                  </button>
               </Link>
             </div>
           </div>
@@ -111,7 +113,7 @@ const ServicesPage = () => {
                   <span className="transition-transform duration-300 group-hover:-translate-x-2">
                     EXPLORE
                   </span>
-                  <FaArrowRight className="text-blue-600 dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" size={12} />
+                  <FaArrowRight className="text-[#028BFA] dark:text-blue-400 transition-transform duration-300 group-hover:translate-x-2" size={12} />
                 </button>
               </Link>
             </div>
