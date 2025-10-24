@@ -64,12 +64,50 @@ export default function ServiceSection() {
   return (
     <section className="py-20 px-4 bg-black text-white relative overflow-hidden">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold uppercase tracking-widest mb-3">
-          Our Services
+      <div className="max-w-7xl mx-auto text-center mb-5">
+        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
+          {/* Rating Section */}
+          <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+            {/* Stars */}
+            <div className="flex text-yellow-400 text-lg">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            {/* Rating Text */}
+            <span className=" text-sm font-medium text-black dark:text-white">5/5 from</span>
+            {/* Reviews Badge */}
+            <span className="bg-secondary border text-black dark:text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
+              84+ Reviews
+            </span>
+          </div>
+
+          {/* TRC Logo */}
+          {/* <div className="flex items-center order-2 sm:order-1">
+            <img
+              src="trc.png"
+              alt="TRC Logo"
+              className="w-42 h-20 object-contain md:w-40 md:h-20"
+            />
+          </div> */}
+        </div>
+      </div>
+      <div className="max-w-7xl mb-20 mx-auto relative">
+        {/* Section Title */}
+        <h2
+          className="text-center text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
+          data-aos="fade-down"
+        >
+          Our <span className="dark:text-white text-gray-700">Services</span>
         </h2>
-        <p className="text-gray-400 text-base">
-          From minor fixes to major repairs, we’ve got you covered.
+        <p
+          className="text-center text-lg dark:text-white mb-8"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          From minor fixes to major repairs, <br /> we’ve got you covered.
         </p>
       </div>
 
@@ -78,7 +116,7 @@ export default function ServiceSection() {
         {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-blue-600/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA]/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
         >
           <FaArrowLeft />
         </button>
@@ -112,10 +150,16 @@ export default function ServiceSection() {
                   {service.desc}
                 </p>
                 <Link to={service.path}>
-                  <button className="flex items-center gap-2 border border-white/30 px-6 py-2 mt-4 rounded-full text-sm font-semibold text-white hover:text-blue-400 hover:border-blue-400 hover:shadow-[0_0_12px_rgba(59,130,246,0.4)] transition-all duration-300">
-                    <FaArrowRight className="text-blue-400 group-hover:translate-x-1 transition-transform duration-300" />
-                    EXPLORE
+                  <button className="relative bg-[#1a1a1a] text-white cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden border border-white/10 hover:border-[#028BFA]/50">
+                    <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+                      /
+                    </span>
+                    <span className="tracking-wider text-sm group-hover:text-[#028BFA] transition-colors duration-300">
+                      EXPLORE
+                    </span>
                   </button>
+
+
                 </Link>
               </div>
             </div>
@@ -125,7 +169,7 @@ export default function ServiceSection() {
         {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-blue-600/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA] text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
         >
           <FaArrowRight />
         </button>

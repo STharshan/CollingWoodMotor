@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
         {/* Left Text Side */}
         <div>
           <div className="mb-4 flex space-x-2">
-            <span className="w-6 h-px bg-blue-600 rotate-135 mt-3"></span>
+            <span className="w-6 h-px bg-[#028BFA] rotate-135 mt-3"></span>
             <span className="text-gray-500 dark:text-gray-400 uppercase text-sm tracking-widest font-bold">
               raving reviews
             </span>

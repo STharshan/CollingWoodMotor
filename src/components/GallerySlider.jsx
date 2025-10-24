@@ -20,7 +20,7 @@ const GallerySlider = () => {
         <p className="text-sm sm:text-lg max-w-xs mx-auto mb-6">
           Quick and easy booking for all your car repair needs.
         </p>
-        <button className="mt-6 bg-blue-600 text-black cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
+        <button className="mt-6 bg-[#028BFA] text-black cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
           <span className="transition-transform duration-300 group-hover:-translate-x-2">CONTACT US</span>
           <FaArrowRight className="text-black transition-transform duration-300 group-hover:translate-x-2" />
         </button>

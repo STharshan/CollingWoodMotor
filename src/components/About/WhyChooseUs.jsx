@@ -41,8 +41,8 @@ const WhyChooseUs = () => {
             className="relative bg-white dark:bg-neutral-900 border border-gray-200 dark:border-blue-900 p-8 w-full max-w-md mx-auto rounded-xl hover:shadow-lg transition-shadow duration-300"
           >
             {/* Corner borders */}
-            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-blue-600 dark:border-blue-400 rounded-tr-xl"></div>
-            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-blue-600 dark:border-blue-400 rounded-bl-xl"></div>
+            <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-blue-600 dark:border-[#028BFA] rounded-tr-xl"></div>
+            <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-blue-600 dark:border-[#028BFA] rounded-bl-xl"></div>
 
             {/* Icon */}
             <div className="inline-block bg-gradient-to-b from-white to-blue-600 p-3 rounded mb-6 transition-colors duration-300">

@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen text-white mb-20">
+    <section className="relative w-full h-[125vh] text-white mb-20">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -27,49 +27,60 @@ const HeroSection = () => {
         />
 
         {/* Logo Title */}
-        <h1 className="text-5xl md:text-6xl font-bold tracking-widest mb-4">
+        <h1 className="text-5xl md:text-6xl font-bold tracking-widest mb-4 mt-20">
           WELCOME TO
         </h1>
 
         {/* EST */}
-        <p className="text-4xl font-bold leading-tight tracking-wide mb-4">
+        <p className="text-4xl font-bold leading-tight tracking-wide mb-2">
           COLLINGWOOD
         </p>
 
         {/* Services */}
-        <p className="text-3xl md:text-3xl uppercase font-extrabold tracking-widest text-blue-400 mb-4">
+        <p className="text-3xl md:text-3xl uppercase font-extrabold tracking-widest text-[#028BFA] mb-4">
           MOTORS
         </p>
 
         {/* Sub Text */}
-        <p className="text-xl sm:text-xl text-gray-200 max-w-xs sm:max-w-md mb-6">
+        <p className="text-xl sm:text-xl text-gray-200 max-w-75 mb-6">
           Dealer level service at a fraction of the cost
         </p>
 
         {/* CTA Button */}
-        <button className="bg-gray-900 text-blue-600 cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group mb-8">
-          <span className="transition-transform duration-300 group-hover:-translate-x-2">
+        <button className="relative bg-[#1a1a1a] text-[#028BFA] mt-10 cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden">
+          <span className="text-[#028BFA]font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+            /
+          </span>
+          <span className="tracking-wider text-sm  transition-colors duration-300">
             GET A QUOTE
           </span>
-          <FaArrowRight className="text-blue-600 transition-transform duration-300 group-hover:translate-x-2" />
         </button>
 
         {/* Badge Row */}
-        <div className="flex flex-wrap justify-center gap-4 text-sm">
-          <div className="flex items-center gap-2 font-semibold px-3 py-1 rounded">
-            <FaArrowRight className="text-blue-600 w-5 h-5" /> Fast Service
+        <div className="flex justify-center gap-8 mt-10 text-white text-[15px] font-semibold ">
+          {/* Fast Service */}
+          <div className="flex items-center gap-3">
+            <div className="w-7 h-7 bg-[#028BFA] flex items-center justify-center rounded-sm">
+              <FaArrowRight className="text-black text-sm" />
+            </div>
+            <span>Fast Service</span>
           </div>
-          <div className="flex items-center gap-2 font-semibold px-3 py-1 rounded">
-            <FaArrowRight className="text-blue-600 w-5 h-5" /> Quality Care
+
+          {/* Quality Care */}
+          <div className="flex items-center gap-3">
+            <div className="w-7 h-7 bg-[#028BFA] flex items-center justify-center rounded-sm">
+              <FaArrowRight className="text-black text-sm" />
+            </div>
+            <span>Quality Care</span>
           </div>
         </div>
       </div>
 
       {/* Bottom Info Bar */}
-      <div className="absolute left-0 w-full z-20 border-t border-gray-700">
-        <div className="mx-auto bg-black bg-opacity-70 backdrop-blur-sm flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
+      <div className="absolute left-0 w-full bg-black mt-10 z-20 border-t  border-gray-700 ">
+        <div className="mx-auto bg-black bg-opacity-70  backdrop-blur-sm max-w-5xl flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
           {/* Rating Section */}
-          <div className="flex items-center gap-3 bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+          <div className="flex items-center gap-3  bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
             {/* Stars */}
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
@@ -81,7 +92,7 @@ const HeroSection = () => {
             {/* Rating Text */}
             <span className="text-white text-sm font-medium">4.7/5 from</span>
             {/* Reviews Badge */}
-            <span className="bg-gray-800 border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
+            <span className="border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
               84+ Reviews
             </span>
           </div>

@@ -1,18 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import Theme from './Theme';
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(false);
-  const [desktopDropdown, setDesktopDropdown] = useState(false);
   const dropdownRef = useRef();
 
   // Close dropdown if clicked outside (for desktop dropdown)
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setDesktopDropdown(false);
+        // Future dropdown logic
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -20,29 +18,29 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black backdrop-blur-md dark:bg-[#242427]/95 dark:backdrop-blur-md text-white font-semibold shadow-lg">
-      {/* Optional: Shine/gradient overlay for dark mode */}
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black backdrop-blur-md dark:bg-[#242427]/95 text-white font-sans font-medium shadow-lg leading-tight">
+      {/* Optional shine effect */}
       <div className="hidden dark:block absolute inset-0 pointer-events-none bg-gradient-to-br from-white/10 to-black/80" />
 
-      <div className="relative max-w-7xl mx-auto flex items-center justify-between px-4">
+      <div className="relative max-w-7xl mx-auto flex items-center justify-between px-4 py-1">
         {/* Logo */}
-        <img src="/logo.png" alt="Logo" className="h-20  object-contain" />
+        <img src="/logo.png" alt="Logo" className="h-16 object-contain" />
 
         {/* Desktop Menu */}
-        <div className="hidden sm:flex space-x-8">
-          <a href="/" className='hover:text-blue-400'>HOME</a>
-          <a href="/about" className="hover:text-blue-400">ABOUT</a>
-          <a href="/gallery" className="hover:text-blue-400">GALLERY</a>
-          <a href="/pricing" className="hover:text-blue-400">PRICING</a>
-          <a href="/services" className="hover:text-blue-400">SERVICES</a>
+        <div className="hidden sm:flex space-x-6 text-sm tracking-wide">
+          <a href="/" className="hover:text-[#028BFA] py-1">HOME</a>
+          <a href="/about" className="hover:text-[#028BFA] py-1">ABOUT</a>
+          <a href="/gallery" className="hover:text-[#028BFA] py-1">GALLERY</a>
+          <a href="/pricing" className="hover:text-[#028BFA] py-1">PRICING</a>
+          <a href="/services" className="hover:text-[#028BFA] py-1">SERVICES</a>
         </div>
 
-        {/* Theme toggle (desktop) */}
+        {/* Theme toggle */}
         <div className="block">
           <Theme />
         </div>
 
-        {/* Hamburger Icon */}
+        {/* Mobile Menu Button */}
         <div className="sm:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -55,12 +53,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="sm:hidden mt-3 pt-3 px-4 pb-6 space-y-4 text-white bg-[#242427]/95 dark:bg-[#242427]/95">
-          <a href="/" className="block border-b border-gray-400 pb-2 hover:text-blue-400">HOME</a>
-          <a href="/about" className="block border-b border-gray-400 pb-2 hover:text-blue-400">ABOUT</a>
-          <a href="/gallery" className="block border-b border-gray-400 pb-2 hover:text-blue-400">GALLERY</a>
-          <a href="/pricing" className="block border-b border-gray-400 pb-2 hover:text-blue-400">PRICING</a>
-          <a href="/pricing" className="block border-b border-gray-400 pb-2 hover:text-blue-400">SERVICES</a>
+        <div className="sm:hidden mt-2 px-4 pb-4 text-white bg-[#242427]/95 dark:bg-[#242427]/95 text-sm leading-tight space-y-3">
+          <a href="/" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">HOME</a>
+          <a href="/about" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">ABOUT</a>
+          <a href="/gallery" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">GALLERY</a>
+          <a href="/pricing" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">PRICING</a>
+          <a href="/services" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">SERVICES</a>
         </div>
       )}
     </nav>
