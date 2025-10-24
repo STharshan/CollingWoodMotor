@@ -1,13 +1,20 @@
-import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+"use client";
+import React, { useEffect } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
     <section className="relative w-full h-[140vh] text-white">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src="/video.mp4" // 🔁 Your actual video path
+        src="/video.mp4"
         autoPlay
         muted
         loop
@@ -15,49 +22,53 @@ const HeroSection = () => {
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/60 bg-opacity-60 z-10"></div>
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
 
       {/* Centered Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center px-6 min-h-screen">
         {/* Title Image */}
         <img
+          data-aos="fade-down"
           src="/tittle.png"
           alt="title"
           className="mb-5 max-w-xs sm:max-w-sm md:max-w-md mt-20"
         />
 
         {/* Logo Title */}
-        <h1 className="text-5xl md:text-6xl font-bold tracking-widest mb-4 mt-20">
+        <h1
+          data-aos="fade-up"
+          className="text-5xl md:text-6xl font-bold tracking-widest mb-4 mt-20"
+        >
           WELCOME TO
         </h1>
 
-        {/* EST */}
-        <p className="text-4xl font-bold leading-tight tracking-wide mb-2">
+        <p data-aos="fade-up" className="text-4xl font-bold leading-tight tracking-wide mb-2">
           COLLINGWOOD
         </p>
 
-        {/* Services */}
-        <p className="text-3xl md:text-3xl uppercase font-extrabold tracking-widest text-[#028BFA] mb-4">
+        <p data-aos="fade-up" className="text-3xl md:text-3xl uppercase font-extrabold tracking-widest text-[#028BFA] mb-4">
           MOTORS
         </p>
 
-        {/* Sub Text */}
-        <p className="text-xl sm:text-xl text-gray-200 max-w-75 mb-6">
+        <p data-aos="fade-up" className="text-xl sm:text-xl text-gray-200 max-w-75 mb-6">
           Dealer level service at a fraction of the cost
         </p>
 
         {/* CTA Button */}
-        <button className="relative bg-[#1a1a1a] text-[#028BFA] mt-10 cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden">
-          <span className="text-[#028BFA]font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+        <button
+          data-aos="zoom-in"
+          className="relative bg-[#1a1a1a] text-[#028BFA] mt-10 cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden"
+        >
+          <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
             /
           </span>
-          <span className="tracking-wider text-sm  transition-colors duration-300">
+          <span className="tracking-wider text-sm transition-colors duration-300">
             GET A QUOTE
           </span>
         </button>
 
         {/* Badge Row */}
-        <div className="flex justify-center gap-8 mt-10 text-white text-[15px] font-semibold ">
+        <div data-aos="fade-up" className="flex justify-center gap-8 mt-10 text-white text-[15px] font-semibold ">
           {/* Fast Service */}
           <div className="flex items-center gap-3">
             <div className="w-7 h-7 bg-[#028BFA] flex items-center justify-center rounded-sm">
@@ -77,12 +88,10 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom Info Bar */}
-      <div className="absolute left-0 w-full z-20 mt-10 border-t border-gray-500">
-        <div className="mx-auto max-w-3xl flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold
-                  ">
+      <div data-aos="fade-up" className="absolute left-0 w-full z-20 mt-10 border-t border-gray-500">
+        <div className="mx-auto max-w-3xl flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold">
           {/* Rating Section */}
           <div className="flex items-center gap-3 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0 bg-black/50">
-            {/* Stars */}
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
               <span>★</span>
@@ -90,9 +99,7 @@ const HeroSection = () => {
               <span>★</span>
               <span>★</span>
             </div>
-            {/* Rating Text */}
             <span className="text-white text-sm font-medium">4.7/5 from</span>
-            {/* Reviews Badge */}
             <span className="border border-white/50 px-3 py-1 rounded-full text-white text-xs font-medium">
               84+ Reviews
             </span>
@@ -107,7 +114,6 @@ const HeroSection = () => {
             />
           </div>
         </div>
-
       </div>
     </section>
   );

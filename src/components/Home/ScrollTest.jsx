@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const testimonials = [
   {
@@ -24,8 +27,15 @@ const testimonials = [
 ];
 
 const ScrollingTestimonials = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
-    <section className="relative bg-black/90 py-26 overflow-hidden">
+    <section
+      className="relative bg-black/90 py-26 overflow-hidden"
+      data-aos="fade-up"
+    >
       {/* Left Shadow */}
       <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black/90 to-transparent pointer-events-none z-10"></div>
       {/* Right Shadow */}

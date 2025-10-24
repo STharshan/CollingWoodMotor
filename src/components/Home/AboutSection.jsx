@@ -1,12 +1,19 @@
-import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+"use client";
+import React, { useEffect } from "react";
+import { FaArrowRight } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+  }, []);
+
   return (
     <section className="bg-white dark:bg-black px-4 py-16 md:py-24 transition-colors duration-300">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Text Side */}
-        <div>
+        <div data-aos="fade-right">
           <p className="text-xs uppercase text-gray-400 dark:text-gray-500 tracking-widest mb-2">
             <span className='text-[#028BFA]'>/</span> About
           </p>
@@ -20,11 +27,11 @@ const AboutSection = () => {
           {/* Badge Row */}
           <div className="flex flex-wrap items-center gap-4 mb-8">
             <div className="flex items-center gap-2 text-sm font-semibold text-black dark:text-white">
-              <FaArrowRight className="bg-[#028BFA] text-black   p-1 w-5 h-5" />
+              <FaArrowRight className="bg-[#028BFA] text-black p-1 w-5 h-5" />
               Reliable Work
             </div>
             <div className="flex items-center gap-2 text-sm font-semibold text-black dark:text-white">
-              <FaArrowRight className="bg-[#028BFA] text-black  p-1 w-5 h-5" />
+              <FaArrowRight className="bg-[#028BFA] text-black p-1 w-5 h-5" />
               Trusted Technicians
             </div>
           </div>
@@ -52,7 +59,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right Image Side */}
-        <div className="relative">
+        <div data-aos="fade-left" className="relative">
           {/* Main image */}
           <div className="relative z-10 rounded-lg shadow-lg overflow-hidden">
             <img
@@ -73,6 +80,8 @@ const AboutSection = () => {
             src="/carmechanic.avif"
             alt="Detail work"
             className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20 rounded shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="200"
           />
         </div>
       </div>

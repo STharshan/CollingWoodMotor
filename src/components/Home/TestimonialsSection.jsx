@@ -1,11 +1,18 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TestimonialsSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
     <section className="bg-white dark:bg-black px-4 py-16 transition-colors">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Text Side */}
-        <div>
+        <div data-aos="fade-right">
           <div className="mb-4 flex space-x-2">
             <span className="w-6 h-px bg-[#028BFA] rotate-135 mt-3"></span>
             <span className="text-gray-500 dark:text-gray-400 uppercase text-sm tracking-widest font-bold">
@@ -15,7 +22,7 @@ const TestimonialsSection = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 leading-snug text-gray-900 dark:text-white">
             THOUSANDS OF <br />HAPPY DRIVERS
           </h2>
-          <div className="flex items-center gap-4 mt-2 md:mt-0">
+          <div className="flex items-center gap-4 mt-2 md:mt-0" data-aos="fade-up" data-aos-delay="200">
             {/* Rating Box */}
             <div className="flex items-center gap-2 border border-gray-300 dark:border-gray-700 px-5 py-2 rounded-full bg-white dark:bg-black">
               {/* Stars */}

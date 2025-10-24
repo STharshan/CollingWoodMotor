@@ -1,7 +1,9 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const services = [
   {
@@ -51,6 +53,10 @@ const services = [
 export default function ServiceSection() {
   const scrollRef = useRef(null);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+  }, []);
+
   const scroll = (dir) => {
     if (scrollRef.current) {
       const cardWidth = scrollRef.current.firstChild.offsetWidth + 24; // card + gap
@@ -62,7 +68,10 @@ export default function ServiceSection() {
   };
 
   return (
-    <section className="py-20 px-4 bg-black text-white relative overflow-hidden">
+    <section
+      className="py-20 px-4 bg-black text-white relative overflow-hidden"
+      data-aos="fade-up"
+    >
       {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-5">
         <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
@@ -116,6 +125,8 @@ export default function ServiceSection() {
             <div
               key={i}
               className="relative snap-start w-[360px] md:w-[400px] h-[570px] transition-colors flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay={i * 100} // staggered effect
             >
               <img
                 src={service.image}

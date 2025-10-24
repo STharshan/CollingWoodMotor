@@ -1,6 +1,9 @@
-import React from 'react';
-import { BiSolidTorch } from 'react-icons/bi';
-import { FaRegStar } from 'react-icons/fa';
+"use client";
+import React, { useEffect } from "react";
+import { BiSolidTorch } from "react-icons/bi";
+import { FaRegStar } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const features = [
   {
@@ -18,6 +21,10 @@ const features = [
 ];
 
 const WhyChooseUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+  }, []);
+
   return (
     <section
       className="py-20 px-4 bg-white dark:bg-black text-center transition-colors duration-300"
@@ -25,10 +32,10 @@ const WhyChooseUs = () => {
       aria-label="Why Choose Us"
     >
       {/* Heading */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2">
+      <h2 data-aos="fade-down" className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-2">
         WHY CHOOSE US
       </h2>
-      <p className="text-gray-500 dark:text-gray-300 text-sm sm:text-base mb-12 max-w-xl mx-auto">
+      <p data-aos="fade-up" className="text-gray-500 dark:text-gray-300 text-sm sm:text-base mb-12 max-w-xl mx-auto">
         Discover the top reasons to <br />
         choose our expert services.
       </p>
@@ -38,6 +45,8 @@ const WhyChooseUs = () => {
         {features.map((feature, index) => (
           <div
             key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 150} // Stagger effect
             className="relative bg-white dark:bg-neutral-900 border border-gray-200 dark:border-blue-900 p-8 w-full max-w-md mx-auto rounded-xl hover:shadow-lg transition-shadow duration-300"
           >
             {/* Corner borders */}
