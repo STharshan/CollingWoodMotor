@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Right - Contact + Socials */}
-        <div className="flex flex-col justify-between mx-auto w-full">
+        <div className="flex flex-col justify-between mx-auto w-80">
           <div className="space-y-4">
             {/* Phone number 1 */}
             <a
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
 
             {/* Social Icons - under review, right aligned */}
-            <div className="flex items-center gap-4 justify-center -ml-30 mt-6">
+            <div className="flex items-center gap-4 justify-end mr-10 mt-6">
               <a
                 href="https://web.facebook.com/Collingwoodmotorsmotcentre/?_rdc=1&_rdr#"
                 target="_blank"

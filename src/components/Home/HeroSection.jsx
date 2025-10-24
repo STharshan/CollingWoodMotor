@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[125vh] text-white mb-20">
+    <section className="relative w-full h-[140vh] text-white">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -77,10 +77,11 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom Info Bar */}
-      <div className="absolute left-0 w-full bg-black mt-10 z-20 border-t  border-gray-700 ">
-        <div className="mx-auto bg-black bg-opacity-70  backdrop-blur-sm max-w-5xl flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold shadow-lg">
+      <div className="absolute left-0 w-full z-20 mt-10 border-t border-gray-500">
+        <div className="mx-auto max-w-3xl flex flex-col sm:flex-row items-center justify-between px-6 py-3 text-white text-sm font-semibold
+                  ">
           {/* Rating Section */}
-          <div className="flex items-center gap-3  bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+          <div className="flex items-center gap-3 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0 bg-black/50">
             {/* Stars */}
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
@@ -92,7 +93,7 @@ const HeroSection = () => {
             {/* Rating Text */}
             <span className="text-white text-sm font-medium">4.7/5 from</span>
             {/* Reviews Badge */}
-            <span className="border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
+            <span className="border border-white/50 px-3 py-1 rounded-full text-white text-xs font-medium">
               84+ Reviews
             </span>
           </div>
@@ -106,6 +107,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
+
       </div>
     </section>
   );

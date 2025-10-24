@@ -25,7 +25,12 @@ const testimonials = [
 
 const ScrollingTestimonials = () => {
   return (
-    <section className="bg-black/90 py-16 overflow-hidden">
+    <section className="relative bg-black/90 py-26 overflow-hidden">
+      {/* Left Shadow */}
+      <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black/90 to-transparent pointer-events-none z-10"></div>
+      {/* Right Shadow */}
+      <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black/90 to-transparent pointer-events-none z-10"></div>
+
       <div className="w-[200%] animate-scroll flex space-x-6">
         {[...testimonials, ...testimonials].map((t, index) => (
           <div
@@ -34,7 +39,9 @@ const ScrollingTestimonials = () => {
           >
             <p className="text-sm mb-4">"{t.quote}"</p>
             <p className="font-bold text-sm uppercase">{t.author}</p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">Google Reviews</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Google Reviews
+            </p>
           </div>
         ))}
       </div>

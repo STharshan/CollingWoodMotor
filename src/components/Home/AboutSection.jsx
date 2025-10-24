@@ -72,7 +72,7 @@ const AboutSection = () => {
           <img
             src="/carmechanic.avif"
             alt="Detail work"
-            className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20 rounded shadow-lg border-4 border-white dark:border-black"
+            className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20 rounded shadow-lg"
           />
         </div>
       </div>

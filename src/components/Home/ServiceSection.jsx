@@ -66,7 +66,6 @@ export default function ServiceSection() {
       {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-5">
         <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
-          {/* Rating Section */}
           <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
@@ -75,8 +74,8 @@ export default function ServiceSection() {
               <span>★</span>
               <span>★</span>
             </div>
-            <span className="text-sm font-medium text-black dark:text-white">5/5 from</span>
-            <span className="bg-secondary border text-black dark:text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
+            <span className="text-sm font-medium text-white">5/5 from</span>
+            <span className="bg-secondary border text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
               84+ Reviews
             </span>
           </div>
@@ -85,23 +84,21 @@ export default function ServiceSection() {
 
       {/* Section Title */}
       <div className="max-w-7xl mb-20 mx-auto text-center">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
-          data-aos="fade-down"
-        >
-          Our <span className="dark:text-white text-gray-700">Services</span>
+        <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase">
+          Our Services
         </h2>
-        <p
-          className="text-lg dark:text-white mb-8"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <p className="text-lg dark:text-white mb-8">
           From minor fixes to major repairs, <br /> we’ve got you covered.
         </p>
       </div>
 
       {/* Scrollable Cards */}
       <div className="relative max-w-7xl mx-auto">
+        {/* Left Shadow */}
+        <div className="absolute left-0 top-0 h-full w-24 md:w-32 bg-gradient-to-r from-black to-transparent pointer-events-none z-10"></div>
+        {/* Right Shadow */}
+        <div className="absolute right-0 top-0 h-full w-24 md:w-32 bg-gradient-to-l from-black to-transparent pointer-events-none z-10"></div>
+
         {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
@@ -113,31 +110,25 @@ export default function ServiceSection() {
         {/* Cards Wrapper */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 px-16 snap-x snap-mandatory"
+          className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 px-16 snap-x snap-mandatory relative z-0"
         >
           {services.map((service, i) => (
             <div
               key={i}
               className="relative snap-start w-[360px] md:w-[400px] h-[570px] transition-colors flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
             >
-              {/* Image */}
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
               />
-
-              {/* Content */}
               <div className="flex flex-col flex-1 justify-between p-4 relative">
-                {/* Title */}
                 <h3 className="font-semibold text-lg mb-2 text-white dark:text-blue-400 drop-shadow">
                   {service.title}
                 </h3>
-
-                {/* Description */}
-                <p className="text-sm text-white dark:text-gray-200 flex-1">{service.desc}</p>
-
-                {/* Explore Button */}
+                <p className="text-sm text-white dark:text-gray-200 flex-1">
+                  {service.desc}
+                </p>
                 <Link to={service.path}>
                   <button className="relative bg-[#1a1a1a] text-white cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden border border-white/10 hover:border-[#028BFA]/50">
                     <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
