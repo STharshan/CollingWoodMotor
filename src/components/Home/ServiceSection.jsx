@@ -104,9 +104,9 @@ export default function ServiceSection() {
       {/* Scrollable Cards */}
       <div className="relative max-w-7xl mx-auto">
         {/* Left Shadow */}
-        <div className="absolute left-0 top-0 h-full w-24 md:w-32 bg-gradient-to-r from-black to-transparent pointer-events-none z-10"></div>
+        <div className="absolute left-0 top-0 h-full w-24 md:w-32 bg-linear-to-r from-black to-transparent pointer-events-none z-10"></div>
         {/* Right Shadow */}
-        <div className="absolute right-0 top-0 h-full w-24 md:w-32 bg-gradient-to-l from-black to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 h-full w-24 md:w-32 bg-linear-to-l from-black to-transparent pointer-events-none z-10"></div>
 
         {/* Left Arrow */}
         <button

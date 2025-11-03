@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
             <div className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-blue-600 dark:border-[#028BFA] rounded-bl-xl"></div>
 
             {/* Icon */}
-            <div className="inline-block bg-gradient-to-b from-white to-blue-600 p-3 rounded mb-6 transition-colors duration-300">
+            <div className="inline-block bg-linear-to-b from-white to-blue-600 p-3 rounded mb-6 transition-colors duration-300">
               {feature.icon}
             </div>
 

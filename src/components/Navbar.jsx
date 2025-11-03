@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black backdrop-blur-md dark:bg-[#242427]/95 text-white font-sans font-medium shadow-lg leading-tight">
       {/* Optional shine effect */}
-      <div className="hidden dark:block absolute inset-0 pointer-events-none bg-gradient-to-br from-white/10 to-black/80" />
+      <div className="hidden dark:block absolute inset-0 pointer-events-none bg-linear-to-br from-white/10 to-black/80" />
 
       <div className="relative max-w-7xl mx-auto flex items-center justify-between px-4 py-1">
         {/* Logo */}

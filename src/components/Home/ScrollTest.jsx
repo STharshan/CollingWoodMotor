@@ -37,9 +37,9 @@ const ScrollingTestimonials = () => {
       data-aos="fade-up"
     >
       {/* Left Shadow */}
-      <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black/90 to-transparent pointer-events-none z-10"></div>
+      <div className="absolute left-0 top-0 h-full w-16 bg-linear-to-r from-black/90 to-transparent pointer-events-none z-10"></div>
       {/* Right Shadow */}
-      <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black/90 to-transparent pointer-events-none z-10"></div>
+      <div className="absolute right-0 top-0 h-full w-16 bg-linear-to-l from-black/90 to-transparent pointer-events-none z-10"></div>
 
       <div className="w-[200%] animate-scroll flex space-x-6">
         {[...testimonials, ...testimonials].map((t, index) => (
