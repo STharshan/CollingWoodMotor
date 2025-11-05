@@ -59,7 +59,7 @@ export default function GallerySection() {
         }}
       >
         <div className="mb-4 flex justify-center items-center space-x-2 mt-50">
-          <span className="w-6 h-px bg-blue-600 rotate-135"></span>
+          <span className="w-6 h-px bg-[#028BFA] rotate-135"></span>
           <span className=" uppercase text-sm tracking-widest font-bold">Gallery</span>
         </div>
         <h1 className="text-2xl sm:text-3xl md:text-4xl mt-5 max-w-3xl">

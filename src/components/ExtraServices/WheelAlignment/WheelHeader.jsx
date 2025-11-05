@@ -30,7 +30,7 @@ const WheelHeader = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-7xl font-semibold text-blue-600 mb-10">WHEEL ALIGMENT</h2>
+        <h2 className="text-4xl md:text-7xl font-semibold text-[#028BFA] mb-10">WHEEL ALIGMENT</h2>
 
         {/* Subtext */}
         <p className="text-gray-300 text-base md:text-lg font-semibold">
@@ -41,11 +41,11 @@ const WheelHeader = () => {
         {/* Info Badges */}
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black" />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black" />
             Improved Handling
           </div>
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black " />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black " />
             Tire Longevity
           </div>
         </div>

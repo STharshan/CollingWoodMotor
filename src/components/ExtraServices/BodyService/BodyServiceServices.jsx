@@ -29,7 +29,7 @@ const BodyServiceServices = () => {
                                     to={item.path}
                                     className={`block pl-2 transition-all duration-150 ${
                                         location.pathname === item.path
-                                            ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                                            ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                                             : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                                     }`}
                                 >
@@ -50,7 +50,7 @@ const BodyServiceServices = () => {
                         Keep your car running at its best with our comprehensive and reliable car servicing. At Collingwood motors, we go beyond routine checks—our experienced technicians use top-quality parts and cutting-edge tools to ensure your vehicle stays in peak condition. From maximizing performance to preventing costly repairs, we’re committed to your car’s health and your peace of mind. Trust us to deliver expert care tailored to your vehicle’s needs—schedule your service today!
                     </p>
 
-                    <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
                         <p className="text-xl">
                             <strong>CM Pro Tip: </strong>
                             Regular servicing helps prevent breakdowns, extends your car’s lifespan, and ensures optimal performance, saving you money on costly repairs down the line.

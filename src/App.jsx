@@ -14,6 +14,9 @@ import Belts from './pages/ExtraServices/Belts';
 import BodyService from './pages/ExtraServices/BodyService';
 import Diagnostics from './pages/ExtraServices/Diagnostics';
 import ScrollToTop from './components/ScrollToTop';
+import TermsConditions from './components/Term';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import GDPRConsent from './components/GDPRButton';
 
 
 function App() {
@@ -36,9 +39,12 @@ function App() {
             <Route path="/services/service" element={<BodyService />} />
             <Route path="/services/belts-chains" element={<Belts />} />
             <Route path="/services/diagnostics" element={<Diagnostics />} />
+            <Route path="/terms" element={<TermsConditions />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
+        <GDPRConsent />
       </div>
     </Router>
   );

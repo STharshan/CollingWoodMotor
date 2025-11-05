@@ -34,7 +34,9 @@ const GallerySlider = () => {
         </p>
 
         {/* Button */}
-        <button
+        <a
+          href="https://wa.me/447564693973"
+          target="_blank"
           data-aos="zoom-in"
           data-aos-delay="400"
           className="mt-6 bg-[#028BFA] gap-3 text-black cursor-pointer px-8 py-3 rounded-full inline-flex items-center transition group overflow-hidden hover:shadow-[0_0_12px_rgba(2,139,250,0.4)]"
@@ -45,7 +47,7 @@ const GallerySlider = () => {
           <span className="transition-transform duration-300 text-sm group-hover:translate-x-2">
             CONTACT US
           </span>
-        </button>
+        </a>
       </div>
     </section>
   );

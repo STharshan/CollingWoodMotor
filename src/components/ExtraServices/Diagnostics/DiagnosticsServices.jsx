@@ -29,7 +29,7 @@ const DiagnosticsService = () => {
                                     to={item.path}
                                     className={`block pl-2 transition-all duration-150 ${
                                         location.pathname === item.path
-                                            ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                                            ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                                             : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                                     }`}
                                 >
@@ -50,7 +50,7 @@ const DiagnosticsService = () => {
                         Don't guess—know what's going on under the hood! Our advanced car diagnostics give you a clear, accurate picture of your vehicle's health, saving you time, money, and stress. Whether it’s an odd noise, a dashboard warning light, or just peace of mind before a road trip, our cutting-edge tools pinpoint problems quickly and precisely. What We Offer
                     </p>
 
-                    <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
                         <p className="text-xl">
                             <strong>CM Pro Tip: </strong>
                             Regularly check your car’s diagnostic system, even if there’s no warning light on. Some issues, like reduced fuel efficiency or minor sensor problems, may not trigger an alert but can still affect performance. 

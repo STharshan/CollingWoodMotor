@@ -27,15 +27,19 @@ const BodyWorkSection = () => {
             ))}
         </div>
       </div>
+
       {/* Contact Button */}
-     <button className="mt-6 bg-black dark:bg-white gap-3  text-[#028BFA] cursor-pointer px-8 py-3 rounded-full inline-flex items-center transition group overflow-hidden hover:shadow-[0_0_12px_rgba(2,139,250,0.4)]">
-          <span className="font-bold leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
-            /
-          </span>
-          <span className="transition-transform duration-300 text-sm group-hover:translate-x-2">
-            CONTACT US
-          </span>
-        </button>
+      <a 
+         href="https://wa.me/447564693973"
+        target='_blank'
+        className="mt-6 bg-black dark:bg-white gap-3  text-[#028BFA] cursor-pointer px-8 py-3 rounded-full inline-flex items-center transition group overflow-hidden hover:shadow-[0_0_12px_rgba(2,139,250,0.4)]">
+        <span className="font-bold leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+          /
+        </span>
+        <span className="transition-transform duration-300 text-sm group-hover:translate-x-2">
+          CONTACT US
+        </span>
+      </a>
     </section>
   );
 };

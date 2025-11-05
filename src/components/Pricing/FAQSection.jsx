@@ -37,7 +37,7 @@ const FAQSection = () => {
         {/* Left Section */}
         <div className="lg:w-1/2">
           <div className="mb-4 flex space-x-2">
-            <span className="w-6 h-px bg-blue-600 rotate-135 mt-2"></span>
+            <span className="w-6 h-px bg-[#028BFA] rotate-135 mt-2"></span>
             <span className="uppercase text-sm tracking-widest font-bold text-gray-400 dark:text-gray-500">Help</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-black dark:text-white mb-3">FAQ'S</h2>
@@ -45,10 +45,17 @@ const FAQSection = () => {
             Find answers to common questions about our services and policies.
           </p>
 
-          <button className="mt-6 bg-blue-600 text-black dark:text-white cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
-            <span className="transition-transform duration-300 group-hover:-translate-x-2">CONTACT US</span>
-            <FaArrowRight className="text-black dark:text-white transition-transform duration-300 group-hover:translate-x-2" />
-          </button>
+          <a
+            href="https://wa.me/447564693973"
+            target='_blank'
+            className="mt-6 bg-[#028BFA] text-black dark:text-white cursor-pointer font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 transition group">
+            <span className="font-bold leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
+              /
+            </span>
+            <span className="transition-transform duration-300 text-sm group-hover:translate-x-2">
+              CONTACT US
+            </span>
+          </a>
         </div>
 
         {/* Right Section */}
@@ -66,9 +73,9 @@ const FAQSection = () => {
                   {faq.question}
                 </span>
                 {activeIndex === index ? (
-                  <FaChevronUp className="text-blue-600 dark:text-blue-400 text-sm" />
+                  <FaChevronUp className="text-[#028BFA] dark:text-blue-400 text-sm" />
                 ) : (
-                  <FaChevronDown className="text-blue-600 dark:text-blue-400 text-sm" />
+                  <FaChevronDown className="text-[#028BFA] dark:text-blue-400 text-sm" />
                 )}
               </button>
               {activeIndex === index && (

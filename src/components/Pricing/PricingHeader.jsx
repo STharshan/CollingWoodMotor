@@ -40,11 +40,11 @@ const PricingHeader = () => {
         {/* Info Badges */}
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black rounded" />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black rounded" />
             Full Range
           </div>
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black rounded" />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black rounded" />
             Skilled Team
           </div>
         </div>

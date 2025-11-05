@@ -21,9 +21,12 @@ const FinanceBanner = () => {
             Join our happy customers and spread the cost over easy monthly instalments
             for auto service and repair
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition">
+          <a 
+             href="https://wa.me/447564693973"
+             target="_blank"
+            className="bg-[#028BFA] hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </div>

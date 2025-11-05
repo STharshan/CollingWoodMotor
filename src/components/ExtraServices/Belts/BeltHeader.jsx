@@ -30,7 +30,7 @@ const BeltHeader = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-6xl font-semibold text-blue-600 mb-10 uppercase">Belts/Chains</h2>
+        <h2 className="text-4xl md:text-6xl font-semibold text-[#028BFA] mb-10 uppercase">Belts/Chains</h2>
 
         {/* Subtext */}
         <p className="text-gray-300 text-base md:text-lg font-semibold">
@@ -41,11 +41,11 @@ const BeltHeader = () => {
         {/* Info Badges */}
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black" />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black" />
             Don’t wait for a failure
           </div>
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black " />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black " />
             Wet timing belt specialist 
           </div>
         </div>

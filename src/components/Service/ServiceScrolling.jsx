@@ -3,18 +3,28 @@ import React from "react";
 const testimonials = [
   {
     quote:
-      "My daughters clutch went on her car.  Simon went above and beyond to take the stress out of the situation.  He collected the car, it was repaired in super quick time and at a very good price.  A really decent bloke who I will definitely use again and can highly recommend. 5* service, thank you",
-    author: "Penny Beyless",
+      "Excellent service, my son and I both use Collingwood Motors, can often fit you in at short notice. They fixed an issue on my car so quickly, they actually took a video to show me that the job was done. Definitely recommend and easy to get to. Bus routes nearby if you need to drop your car off too.",
+    author: "Christine Stallard",
   },
   {
     quote:
-      "Best garage for repairs, servicing and MOT in Leicester without a doubt. Knowledgeable mechanics who wont rip you off, fair prices. Always a warm welcome and efficient service from Simon... highly recommend",
-    author: "Nick Nesbit",
+      "Used to go to Collingwood Motors years ago but then moved away and had to go elsewhere. Have moved back locally and I’m so glad! Took my new car for its major service and MOT, really really reasonable prices and I can actually tell it’s been taken care of. Staff are always so friendly and lovely. Hoping I stay local enough to use for life as I don’t trust my car anywhere else. Cannot recommend this garage enough. Thank you Simon & the Collingwood gents 💛",
+    author: "Stacey Hughes",
   },
   {
     quote:
-      "Very impressed by customer care. Two really nice lads. Quoted  at more than we paid them. Strived  to keep the cost down. Will definitely  deal with this garage again.",
-    author: "Susan Glover",
+      "Great service. Has just done a clutch on our car for us. Great price and amazing customer service. Would highly recommend. Thank you again Simon.",
+    author: "Aimee Robertson",
+  },
+  {
+    quote:
+      "Was absolutely thrilled with the service I received reported my car to them Tuesday evening after 5.30 my car was picked up the following morning and the work carried out that day and I was driving my car again that evening I was fully informed of work and cost that would be carried out brilliant!!! Would highly recommend and will definitely be my go to garage in the future",
+    author: "Vikki Greig",
+  },
+  {
+    quote:
+      "Great garage, both myself and my husband have been coming here for the past 5-6 years. Never had any issues, Simon is always transparent regarding repairs and they are done as soon as the parts are in. Our car/van are always safe for us to drive. Honestly and reliability is what matters to us and that’s why we return every year. Highly recommend",
+    author: "Heidi Goodwin",
   },
   {
     quote:
@@ -23,33 +33,14 @@ const testimonials = [
   },
   {
     quote:
-      "Thank you for the work on my 4x4,finally I have a garage I can trust.i will always take my cars to you from now on,top marks",
-    author: "Ady Smith"
+      "Brilliant service, my car broke down at home he picked up my car got it back in two days. Highly recommended Collingwood Motors",
+    author: "Manuela Miron",
   },
   {
     quote:
-      "I had a breakdown and these guys helped me out. Anyone who had a breakdown will understand the pain my pain and the help one requires at that time! Thanks to these guys, my car was sorted and I was back on the road!",
-    author: "shailesh mishr"
-  },
-  {
-    quote:
-      "Excellent service and won't rip you off. Simon and Craig are top mechanics with lots of years experience between them",
-    author: "Matthew Leboutillier"
-  },
-  {
-    quote:
-      "Absolutely amazing garage. Staff go out of their way to help & their late opening times absolutely saved my bank holiday! couldn't recommend this garage enough.",
-    author: "Heledd Davies"
-  },
-  {
-    quote:
-      "The team at Collingwood motors are great, welcoming and professional, only gatage I will use and recommend. 5*",
-    author: "Stephen Key"
-  },
-  {
-    quote:
-      "I have used Collingwood motors for the last few years and always had great service. I had to have my car recovered recently due to breaking down and Simon had my car fixed and back on the road within a few hours and even lent me his coat as I had to hang around in the rain. I can not recommend this place enough!",
-    author: "Emma Allen"
+      `A good friend recommend I take my R56 Mini Cooper S, to Collingwood Motors for the new Clutch, Water Pump & Oil Seal. They did a fantastic job, and the car runs like it's brand new.. I'm so glad I had the work done.
+They took good care of my Mini, and I'd not hesitate to recommend them.`,
+    author: "Paul Whitfield",
   },
 ];
 

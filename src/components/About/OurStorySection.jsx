@@ -5,7 +5,7 @@ const OurStorySection = () => {
     <section className="bg-white dark:bg-black py-15 px-6 md:px-12 lg:px-24 text-center transition-colors duration-300">
       {/* Tagline */}
       <div className="mb-4 flex justify-center items-center space-x-2">
-        <span className="w-6 h-px bg-blue-600 rotate-135"></span>
+        <span className="w-6 h-px bg-[#028BFA] rotate-135"></span>
         <span className="text-gray-500 dark:text-gray-300 uppercase text-sm tracking-widest font-bold">Our Story</span>
       </div>
 

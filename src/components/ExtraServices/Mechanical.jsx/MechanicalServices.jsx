@@ -28,7 +28,7 @@ const MechanicalService = () => {
                                 <Link
                                     to={item.path}
                                     className={`block pl-2 transition-all duration-150 ${location.pathname === item.path
-                                            ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                                            ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                                             : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                                         }`}
                                 >
@@ -49,7 +49,7 @@ const MechanicalService = () => {
                         No matter the issue, our master technicians are ready to tackle it. From routine maintenance to complex mechanical repairs, we have the skills and expertise to handle it all. Nothing is too hard for us—we take pride in delivering high-quality, reliable repairs to keep your vehicle running at its best. Trust us to get you back on the road with confidence!
                     </p>
 
-                    <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
                         <p className="text-xl">
                             <strong>CM Pro Tip: </strong>
                             Regular maintenance is key to preventing mechanical issues. Stay on top of oil changes, tire checks, and fluid levels, and address small problems before they turn into big ones.

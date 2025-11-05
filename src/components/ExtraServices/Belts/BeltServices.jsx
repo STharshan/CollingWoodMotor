@@ -29,7 +29,7 @@ const BeltService = () => {
                                     to={item.path}
                                     className={`block pl-2 transition-all duration-150 ${
                                         location.pathname === item.path
-                                            ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                                            ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                                             : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                                     }`}
                                 >
@@ -50,7 +50,7 @@ const BeltService = () => {
                         Don’t let a worn timing belt or chain derail your engine’s performance! At Collingwood Motors, we specialise in precise, reliable timing system repairs that keep your engine running smoothly and prevent costly damage. Whether it’s replacing a timing belt or servicing a timing chain, our skilled technicians use top-quality parts and advanced techniques to ensure your vehicle’s peak performance. Trust us to keep your car on schedule—drive with confidence by booking your repair today!
                     </p>
 
-                    <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
                         <p className="text-xl">
                             <strong>CM Pro Tip:</strong> While timing chains typically last longer than belts, they can still wear over time. Regular oil changes and ensuring your engine has the right oil level can help prolong the life of your timing chain and prevent expensive repairs.
                         </p>

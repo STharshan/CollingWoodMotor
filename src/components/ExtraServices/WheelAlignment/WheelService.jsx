@@ -29,7 +29,7 @@ const WheelService = () => {
                   to={item.path}
                   className={`block pl-2 transition-all duration-150 ${
                     location.pathname === item.path
-                      ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                      ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                       : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                   }`}
                 >
@@ -50,7 +50,7 @@ const WheelService = () => {
             Is your car pulling to one side or do you notice uneven tire wear? It might be time for a wheel alignment! At Collingwood Motors, we specialize in precise wheel alignment services that ensure your vehicle drives smoothly, improves fuel efficiency, and extends the life of your tires. Our skilled technicians use state-of-the-art equipment to get your wheels perfectly aligned, so you can enjoy better handling and safety on every drive.
           </p>
 
-          <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+          <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
             <p className="text-xl">
               <strong>CM Pro Tip:</strong>
               Even if you don’t notice any obvious issues, it’s a good idea to get a wheel alignment every 12,000 miles or if you’ve recently hit a pothole or curb.

@@ -29,7 +29,7 @@ const MOTService = () => {
                   to={item.path}
                   className={`block pl-2 transition-all duration-150 ${
                     location.pathname === item.path
-                      ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                      ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                       : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                   }`}
                 >
@@ -50,7 +50,7 @@ const MOTService = () => {
             At Collingwood Motors, we make your MOT test hassle-free and reliable. Our certified technicians thoroughly inspect your vehicle to ensure it meets all safety and environmental standards, giving you peace of mind on the road. With quick turnaround times, transparent pricing, and a commitment to quality, we make sure your car passes with confidence. Trust us to keep you and your vehicle safe—schedule your MOT with us today!
           </p>
 
-          <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mt-10 mb-6">
+          <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
             <p className="text-xl">
               <strong>CM Pro Tip:</strong>
               To increase your chances of passing the MOT, make sure to do a pre-test check on key components like lights, tires, and brakes. Ensure your windscreen wipers are working and your car has enough fuel.

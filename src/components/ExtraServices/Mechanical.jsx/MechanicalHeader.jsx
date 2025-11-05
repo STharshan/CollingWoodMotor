@@ -41,11 +41,11 @@ const MechanicalHeader = () => {
         {/* Info Badges */}
         <div className="flex flex-wrap justify-center gap-4">
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black" />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black" />
             Reliable & High-Quality
           </div>
           <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-blue-600 text-black " />
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black " />
             Master Technician
           </div>
         </div>

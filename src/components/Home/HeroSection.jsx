@@ -27,12 +27,17 @@ const HeroSection = () => {
       {/* Centered Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center px-6 min-h-screen">
         {/* Title Image */}
-        <img
-          data-aos="fade-down"
-          src="/tittle.png"
-          alt="title"
-          className="mb-5 max-w-xs sm:max-w-sm md:max-w-md mt-20"
-        />
+        <a
+          href="https://preferredmechanic.co.uk/engine-repair-rebuild-services/leicester-eng/"
+          target="_blank"
+        >
+          <img
+            data-aos="fade-down"
+            src="/tittle.png"
+            alt="title"
+            className="mb-5 max-w-xs sm:max-w-sm md:max-w-md mt-20"
+          />
+        </a>
 
         {/* Logo Title */}
         <h1
@@ -55,9 +60,12 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Button */}
-        <button
+        <a
           data-aos="zoom-in"
-          className="relative bg-[#1a1a1a] text-[#028BFA] mt-10 cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden"
+          href="https://wa.me/447564693973" // 👈 replace with your WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative bg-[#1a1a1a] text-[#028BFA] mt-10 cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden hover:bg-[#028BFA]/10"
         >
           <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
             /
@@ -65,7 +73,7 @@ const HeroSection = () => {
           <span className="tracking-wider text-sm transition-colors duration-300">
             GET A QUOTE
           </span>
-        </button>
+        </a>
 
         {/* Badge Row */}
         <div data-aos="fade-up" className="flex justify-center gap-8 mt-10 text-white text-[15px] font-semibold ">

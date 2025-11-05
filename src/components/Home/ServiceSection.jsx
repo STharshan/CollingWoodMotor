@@ -102,16 +102,16 @@ export default function ServiceSection() {
       </div>
 
       {/* Scrollable Cards */}
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto px-2 sm:px-4">
         {/* Left Shadow */}
-        <div className="absolute left-0 top-0 h-full w-24 md:w-32 bg-linear-to-r from-black to-transparent pointer-events-none z-10"></div>
+        <div className="absolute left-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-r from-black to-transparent pointer-events-none z-10"></div>
         {/* Right Shadow */}
-        <div className="absolute right-0 top-0 h-full w-24 md:w-32 bg-linear-to-l from-black to-transparent pointer-events-none z-10"></div>
+        <div className="absolute right-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-l from-black to-transparent pointer-events-none z-10"></div>
 
         {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA]/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA]/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
         >
           <FaArrowLeft />
         </button>
@@ -119,19 +119,19 @@ export default function ServiceSection() {
         {/* Cards Wrapper */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 px-16 snap-x snap-mandatory relative z-0"
+          className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 snap-x snap-mandatory relative z-0 pl-6 sm:pl-8 md:pl-10"
         >
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative snap-start w-[360px] md:w-[400px] h-[570px] transition-colors flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
+              className="relative snap-start w-[300px] sm:w-[340px] md:w-[400px]  h-[520px] md:h-[570px] flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
               data-aos="fade-up"
-              data-aos-delay={i * 100} // staggered effect
+              data-aos-delay={i * 100}
             >
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
+                className="w-full h-72 md:h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
               />
               <div className="flex flex-col flex-1 justify-between p-4 relative">
                 <h3 className="font-semibold text-lg mb-2 text-white dark:text-blue-400 drop-shadow">
@@ -158,7 +158,7 @@ export default function ServiceSection() {
         {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA] text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA] text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
         >
           <FaArrowRight />
         </button>

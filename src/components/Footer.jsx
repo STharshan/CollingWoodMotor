@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaArrowRight, FaFacebook, FaInstagram, FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="w-full">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps?q=52.642,-1.1415&z=15&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.9594955207062!2d-1.1421484!3d52.6426448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48775e237ecb4db7%3A0x33c3b6bb1581a022!2sCollingwood%20motors!5e0!3m2!1sen!2slk!4v1762369325631!5m2!1sen!2slk"
             width="100%"
             height="400"
             allowFullScreen=""
@@ -39,7 +40,7 @@ const Footer = () => {
 
             {/* Phone number 2 */}
             <a
-              href="https://wa.me/+447564693973?text=Hi%20I%20would%20like%20to%20contact%20you"
+              href="https://wa.me/+447564693973"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex justify-between items-center border-b border-gray-300 dark:border-gray-700 pb-2 hover:border-[#028BFA] dark:hover:border-blue-400 cursor-pointer"
@@ -89,18 +90,42 @@ const Footer = () => {
       </div>
 
       {/* Bottom copyright */}
-      <div className="border-t border-gray-200 dark:border-gray-700 mt-10 text-center font-semibold text-sm text-gray-500 dark:text-gray-400 py-6">
-        © 2025 Collingwood Motors. All rights reserved. <span className="mx-2">|</span>
-        Partnered With{' '}
-        <a
-          href="https://www.ansely.co.uk/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-[#028BFA] dark:hover:text-blue-400 transition-colors"
-        >
-          Ansely
-        </a>
-      </div>
+       <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 Collingwood Motors. All rights reserved.</p>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-2 mb-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
+          {/* Left: Terms & Privacy */}
+          <div className="flex gap-4 text-sm">
+            <Link
+              to="/terms"
+              className="text-gray-400 hover:text-[#028BFA] transition duration-300"
+            >
+              Terms & Conditions
+            </Link>
+            <span className="text-gray-500">|</span>
+            <Link
+              to="/privacy"
+              className="text-gray-400 hover:text-[#028BFA] transition duration-300"
+            >
+              Privacy Policy
+            </Link>
+          </div>
+
+          {/* Center: Powered by Ansely (unchanged) */}
+          <p className="text-center font-semibold text-gray-400">
+            Powered by{" "}
+            <a
+              href="https://www.ansely.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#028BFA] hover:underline"
+            >
+              Ansely
+            </a>
+          </p>
+        </div>
     </footer>
   );
 };

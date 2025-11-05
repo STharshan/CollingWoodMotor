@@ -27,7 +27,7 @@ const WindowService = () => {
                                     to={item.path}
                                     className={`block pl-2 transition-all duration-150 ${
                                         location.pathname === item.path
-                                            ? "font-semibold border-l-4 border-blue-600 text-black dark:text-white"
+                                            ? "font-semibold border-l-4 border-[#028BFA] text-black dark:text-white"
                                             : "text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
                                     }`}
                                 >
@@ -48,7 +48,7 @@ const WindowService = () => {
                         Upgrade your vehicle's style, comfort, and protection with our expert window tinting services! At Collingwood Motors, we offer high-quality, precision-applied tint films that reduce heat, protect your interior from UV damage, and enhance privacy—all while giving your car a sleek, modern look. Our experienced technicians ensure a flawless finish, and we use top-tier materials for long-lasting results. Choose us for a cooler, safer, and more stylish ride—schedule your window tinting today!
                     </p>
 
-                    <div className="border-l-4 border-blue-600 p-4 text-sm lg:text-base mb-6">
+                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mb-6">
                         <p className="text-xl">
                             <strong>CM Pro Tip: </strong>
                             Always choose a reputable professional to ensure high-quality installation that lasts and looks great.
