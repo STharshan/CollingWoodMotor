@@ -1,5 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import DiagnosticServices from "./DiagnosticServices";
+import DiagnosticsSigns from "./DiagnosticsSigns";
+import DiagnosticBenefits from "./DiagnosticBenefits";
+import ProfessionalDiagnosticsProcess from "./ProfessionalDiagnosticsProcess";
+import WhenDiagnostics from "./WhyServiceDiagnostics";
 
 const DiagnosticsService = () => {
 
@@ -42,26 +47,11 @@ const DiagnosticsService = () => {
 
                 {/* Main Content */}
                 <main className="w-full lg:w-2/3 text-gray-800 dark:text-gray-100">
-                    <h1 className="text-2xl lg:text-4xl font-bold mb-4 uppercase tracking-wide">
-                        Professional Diagnostics 
-                    </h1>
-
-                    <p className="mb-6 text-sm lg:text-base">
-                        Don't guess—know what's going on under the hood! Our advanced car diagnostics give you a clear, accurate picture of your vehicle's health, saving you time, money, and stress. Whether it’s an odd noise, a dashboard warning light, or just peace of mind before a road trip, our cutting-edge tools pinpoint problems quickly and precisely. What We Offer
-                    </p>
-
-                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
-                        <p className="text-xl">
-                            <strong>CM Pro Tip: </strong>
-                            Regularly check your car’s diagnostic system, even if there’s no warning light on. Some issues, like reduced fuel efficiency or minor sensor problems, may not trigger an alert but can still affect performance. 
-                        </p>
-                    </div>
-                    
-                    <ol className="list-disc pl-6 space-y-2 text-sm lg:text-base">
-                        <li><strong>Precision You Can Trust:</strong> Our cutting-edge diagnostic tools quickly and accurately identify issues, saving you time and money on unnecessary repairs.</li>
-                        <li><strong>Fast, Reliable Service:</strong> With our expert technicians and advanced technology, we get to the root of the problem fast, so you’re back on the road sooner</li>
-                        <li><strong>Confidence in Every Drive:</strong> Enjoy peace of mind knowing your vehicle is running safely and efficiently, with solutions tailored to extend its life and performance.</li>
-                    </ol>
+                    <DiagnosticServices />
+                    <DiagnosticsSigns />
+                    <DiagnosticBenefits />
+                    <WhenDiagnostics />
+                    <ProfessionalDiagnosticsProcess />
 
                 </main>
             </div>

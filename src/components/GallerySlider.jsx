@@ -11,8 +11,8 @@ const GallerySlider = () => {
 
   return (
     <section
-      className="relative text-white opacity-120 h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/carmechanic.avif')" }} // Replace with your image path
+      className="relative text-white  h-screen flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: "url('/image.jpg')" }} // Replace with your image path
     >
       {/* Content */}
       <div className="relative z-10 text-center px-4">

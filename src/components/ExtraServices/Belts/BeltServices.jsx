@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import AirConServices from "./AirConServices";
+import WhyServiceAirConditioning from "./WhyServiceAirConditioning";
 
 const BeltService = () => {
 
@@ -42,25 +44,8 @@ const BeltService = () => {
 
                 {/* Main Content */}
                 <main className="w-full lg:w-2/3 text-gray-800 dark:text-gray-100">
-                    <h1 className="text-3xl lg:text-4xl font-bold mb-4 uppercase tracking-wide">
-                        Expert Timing Belt & Chain Repairs
-                    </h1>
-
-                    <p className="mb-6 text-sm lg:text-base">
-                        Don’t let a worn timing belt or chain derail your engine’s performance! At Collingwood Motors, we specialise in precise, reliable timing system repairs that keep your engine running smoothly and prevent costly damage. Whether it’s replacing a timing belt or servicing a timing chain, our skilled technicians use top-quality parts and advanced techniques to ensure your vehicle’s peak performance. Trust us to keep your car on schedule—drive with confidence by booking your repair today!
-                    </p>
-
-                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
-                        <p className="text-xl">
-                            <strong>CM Pro Tip:</strong> While timing chains typically last longer than belts, they can still wear over time. Regular oil changes and ensuring your engine has the right oil level can help prolong the life of your timing chain and prevent expensive repairs.
-                        </p>
-                    </div>
-
-                    <ol className="list-disc pl-6 space-y-2 text-sm lg:text-base">
-                        <li><strong>Expertise You Can Trust:</strong>  Our skilled technicians specialize in timing belt and chain repairs, ensuring your engine stays in perfect sync</li>
-                        <li><strong>Top-Quality Parts and Service: </strong> We use only the best parts and advanced techniques to provide long-lasting, reliable repairs.</li>
-                        <li><strong>Prevent Costly Damage:</strong>Don’t wait for a failure—our timely repairs protect your engine and save you money in the long run.</li>
-                    </ol>
+                    <AirConServices />
+                    <WhyServiceAirConditioning />
                 </main>
             </div>
         </div>

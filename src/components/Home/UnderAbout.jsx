@@ -20,7 +20,7 @@ export default function WhatWeOffer() {
                 "Advanced diagnostics and repairs carried out to the highest standards",
         },
         {
-            video: "/a3.mp4",
+            video: "/trust.mp4",
             title: "Trusted, Award-Winning Garage",
             description:
                 "Proudly named Best Family-Run Repair Garage 2024 and Best of Leicester by Preferred Mechanic",
@@ -55,6 +55,29 @@ export default function WhatWeOffer() {
     return (
         <section className="relative py-12 px-4 sm:px-6 md:px-12 overflow-visible bg-white dark:bg-black transition-colors duration-300">
             <div className="max-w-7xl mx-auto text-center font-serif relative z-10">
+                <span
+                    data-aos="fade-down"
+                    className={`inline-block text-sm font-medium px-4 py-1 rounded-full mb-4 dark:text-white text-black`}
+                >
+                    What We Offer
+                </span>
+
+                <h2
+                    data-aos="fade-down"
+                    className={`text-4xl md:text-5xl font-bold mb-4 transition-colors duration-500 dark:text-white text-[#111111]
+                        }`}
+                >
+                    At Collingwood Motors, You’re in Expert Hands
+                </h2>
+
+                <p
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                    className={`text-lg max-w-2xl mx-auto mb-14 font-[Inter] transition-colors duration-500 dark:text-[#E9ECEC] text-[#333333]
+                        }`}
+                >
+                    From routine servicing to specialist diagnostics, every vehicle is cared for with precision, experience, and trust.
+                </p>
 
                 {/* CARD SLIDER */}
                 <div
@@ -69,8 +92,8 @@ export default function WhatWeOffer() {
                             transition-all duration-[800ms] ease-[cubic-bezier(0.77,0,0.175,1)] transform ${getCardStyle(i)}`}
                         >
                             <div className="rounded-xl sm:rounded-2xl overflow-hidden transition-all duration-500 h-[380px] sm:h-[400px] md:h-[420px] flex flex-col 
-                                border border-[#E8D9A8]/70 bg-white dark:bg-zinc-900 shadow-[0_8px_24px_rgba(0,0,0,0.1)] 
-                                dark:shadow-[0_12px_40px_rgba(255,215,0,0.1)] dark:border-[#C5A265]"
+                                border border-[#028BFA]/70 bg-white dark:bg-zinc-900 shadow-[#028BFA] shadow-xs
+                                dark:shadow-[#028BFA] dark:border-[#028BFA]"
                             >
                                 {/* VIDEO */}
                                 <div className="relative h-[200px] sm:h-[220px] md:h-[240px] overflow-hidden">
@@ -134,11 +157,10 @@ export default function WhatWeOffer() {
                             onClick={() => setActiveIndex(i)}
                             aria-label={`Go to slide ${i + 1}`}
                             className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 
-                            ${
-                                i === activeIndex
-                                    ? "bg-[#C5A265] dark:bg-[#C5A265] w-6 sm:w-8"
-                                    : "bg-[#C5A265] dark:bg-[#C5A265]"
-                            }`}
+                            ${i === activeIndex
+                                    ? "bg-[#028BFA] dark:bg-[#028BFA] w-6 sm:w-8"
+                                    : "bg-[#028BFA] dark:bg-[#028BFA]"
+                                }`}
                         />
                     ))}
                 </div>
