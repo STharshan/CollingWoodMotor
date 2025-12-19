@@ -14,7 +14,7 @@ export default function WhatWeOffer() {
                 "Manufacturer-trained expertise for all Ford models",
         },
         {
-            video: "/a2.mp4",
+            video: "/master.mp4",
             title: "Master Technician",
             description:
                 "Advanced diagnostics and repairs carried out to the highest standards",
