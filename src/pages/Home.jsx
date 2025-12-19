@@ -7,6 +7,7 @@ import GallerySlider from '../components/GallerySlider'
 import PrecisionRepairs from '../components/Home/PrecisionRepairs'
 import ScrollingTestimonials from '../components/Home/ScrollTest'
 import WhyChooseUs from '../components/About/WhyChooseUs'
+import WhatWeOffer from '../components/Home/UnderAbout'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HeroSection />
       <TestimonialsSection />
       <ScrollingTestimonials />
+      <WhatWeOffer />
       <ServiceSection />
       <AboutSection/>
       <WhyChooseUs />
