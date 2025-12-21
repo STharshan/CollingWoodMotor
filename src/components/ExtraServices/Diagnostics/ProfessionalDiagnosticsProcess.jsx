@@ -7,7 +7,7 @@ export default function ProfessionalDiagnosticsProcess() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side – Text Content */}
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[var(--aircon-heading)]">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#028BFA]">
               Professional Diagnostic Process
             </h2>
             <p className="text-lg mb-8 text-[var(--aircon-muted)]">
@@ -62,7 +62,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
               {/* Pro Tip */}
               <div className="mt-6 rounded-lg border border-[var(--aircon-border)] bg-[var(--aircon-soft)] p-4">
-                <p className="font-semibold text-[var(--aircon-heading)] mb-1">
+                <p className="font-semibold text-[#028BFA] mb-1">
                   CM Pro Tip
                 </p>
                 <p className="text-sm text-[var(--aircon-muted)]">
@@ -76,7 +76,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
           {/* Right Side – Recommendations Table */}
           <div className="rounded-lg shadow-md p-8 border transition-colors duration-300 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
-            <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">Service Recommendations</h3>
+            <h3 className="text-2xl font-bold mb-4 text-[#028BFA]">Service Recommendations</h3>
             <div className="space-y-4 text-sm">
               <div className="flex justify-between items-center border-b pb-2 gap-13 border-[var(--aircon-card-border)]">
                 <span className="text-[var(--aircon-muted)]">Diagnostic Check</span>

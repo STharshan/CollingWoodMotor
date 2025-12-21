@@ -74,7 +74,7 @@ export default function AutomotiveSign() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-heading font-bold mb-4 text-[color:var(--auto-heading)]">
+          <h2 className="text-3xl lg:text-4xl font-heading font-bold mb-4 text-[#028BFA]">
             What Services We Offer
           </h2>
         </div>
@@ -85,7 +85,7 @@ export default function AutomotiveSign() {
             <div
               key={i}
               className="flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm border transition-all duration-300 
-                         hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)] hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2"
+                         hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)] hover:ring-2 hover:ring-[#028BFA] active:ring-[#028BFA] active:ring-offset-2 hover:ring-offset-2"
               style={{
                 backgroundColor: "var(--auto-card-bg)",
                 borderColor: "var(--auto-card-border)",
@@ -95,7 +95,7 @@ export default function AutomotiveSign() {
                 <div className="flex items-center justify-between mb-2">
                   <div className="flex items-center space-x-3">
                     <div
-                      className="w-10 h-10 rounded-lg flex items-center justify-center"
+                      className="w-10 h-10 rounded-lg flex items-center text-[#028BFA] justify-center"
                       style={{ backgroundColor: "var(--auto-icon-bg)" }}
                     >
                       {s.icon}
@@ -118,7 +118,7 @@ export default function AutomotiveSign() {
                       className="flex items-center text-sm font-body text-[color:var(--auto-muted)]"
                     >
                       <FaCheckCircle
-                        className="h-4 w-4 mr-2 flex-shrink-0 text-[color:var(--auto-check-icon)]"
+                        className="h-4 w-4 mr-2 text-[#028BFA] flex-shrink-0 "
                       />
                       {p}
                     </li>

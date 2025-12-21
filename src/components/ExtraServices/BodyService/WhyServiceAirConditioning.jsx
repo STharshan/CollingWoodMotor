@@ -54,7 +54,7 @@ export default function EngineCleaningCards() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[var(--aircon-heading)]">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-[#028BFA]">
             Car Servicing Options
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-[var(--aircon-muted)]">
@@ -73,6 +73,7 @@ export default function EngineCleaningCards() {
                 transition-all duration-300
                 hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
                 hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
+                active:ring-2 active:ring-[#028BFA] active:ring-offset-2
               "
             >
               <div className="px-6">
@@ -94,7 +95,7 @@ export default function EngineCleaningCards() {
                       key={index}
                       className="flex items-center text-left text-sm text-[var(--aircon-heading)]/85 dark:text-[var(--aircon-muted)]"
                     >
-                      <FaCheckCircle className="mr-2 h-4 w-4 text-[var(--aircon-check-icon)]" />
+                      <FaCheckCircle className="mr-2 h-4 w-4 text-[#028BFA]" />
                       {item}
                     </li>
                   ))}

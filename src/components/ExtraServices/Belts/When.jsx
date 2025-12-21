@@ -8,6 +8,7 @@ const SectionCard = ({ title, description, items }) => (
       transition-all duration-300
       hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
       hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
+      active:ring-2 active:ring-[#028BFA] active:ring-offset-2
     "
     >
         <div className="px-6">
@@ -23,7 +24,7 @@ const SectionCard = ({ title, description, items }) => (
                         key={idx}
                         className="flex items-start text-sm text-[var(--aircon-heading)]/85 dark:text-[var(--aircon-muted)]"
                     >
-                        <FaCircle className="h-2 w-2 mt-1 mr-2 text-[var(--aircon-check-icon)]" />
+                        <FaCircle className="h-2 w-2 mt-1 mr-2 text-[#028BFA]" />
                         {item}
                     </li>
                 ))}
@@ -37,7 +38,7 @@ export default function EngineCleaningSigns() {
         <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold mb-4 text-[var(--aircon-heading)]">
+                    <h2 className="text-4xl font-bold mb-4 text-[#028BFA]">
                         When Do You Need Timing Belt or Chain Service?
                     </h2>
                     <p className="text-lg max-w-2xl mx-auto text-[var(--aircon-muted)]">

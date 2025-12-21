@@ -33,7 +33,7 @@ export default function DiagnosticBenefits() {
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
-              <FaChartLine className="w-6 h-6 text-[var(--aircon-icon)]" />
+              <FaChartLine className="w-6 h-6 text-[#028BFA]" />
             </div>
             <h3 className="text-lg font-semibold text-[var(--aircon-heading)]">
               Cars & Light Vehicles
@@ -54,7 +54,7 @@ export default function DiagnosticBenefits() {
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
-              <FaShieldAlt className="w-6 h-6 text-[var(--aircon-icon)]" />
+              <FaShieldAlt className="w-6 h-6 text-[#028BFA]" />
             </div>
             <h3 className="text-lg font-semibold text-[var(--aircon-heading)]">
               Commercial Vehicles
@@ -75,7 +75,7 @@ export default function DiagnosticBenefits() {
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
-              <FaFilter className="w-6 h-6 text-[var(--aircon-icon)]" />
+              <FaFilter className="w-6 h-6 text-[#028BFA]" />
             </div>
             <h3 className="text-lg font-semibold text-[var(--aircon-heading)]">
               Motorhomes

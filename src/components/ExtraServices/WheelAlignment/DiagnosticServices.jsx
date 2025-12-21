@@ -13,7 +13,7 @@ export default function WheelAlignmentServices() {
   {
     title: "4-Wheel Laser Alignment",
     desc: "Ensure perfect wheel positioning with high-precision laser alignment for smoother rides and extended tyre life.",
-    icon: <FaBullseye className="h-5 w-5 text-[var(--aircon-icon)]" />,
+    icon: <FaBullseye className="h-5 w-5 text-[#028BFA]" />,
     points: [
       "High-precision laser measurement",
       "Alignment for all four wheels",
@@ -24,7 +24,7 @@ export default function WheelAlignmentServices() {
   {
     title: "3D Wheel Alignment",
     desc: "Utilizing advanced 3D imaging to accurately analyze wheel geometry and optimize vehicle performance.",
-    icon: <FaTachometerAlt className="h-5 w-5 text-[var(--aircon-icon)]" />,
+    icon: <FaTachometerAlt className="h-5 w-5 text-[#028BFA]" />,
     points: [
       "State-of-the-art 3D imaging",
       "Instant real-time measurements",
@@ -35,7 +35,7 @@ export default function WheelAlignmentServices() {
   {
     title: "Castor & Camber Adjustment",
     desc: "Expertly adjust wheel angles to improve handling, safety, and tyre longevity.",
-    icon: <FaWrench className="h-5 w-5 text-[var(--aircon-icon)]" />,
+    icon: <FaWrench className="h-5 w-5 text-[#028BFA]" />,
     points: [
       "Precise castor angle correction",
       "Accurate camber adjustment",
@@ -46,7 +46,7 @@ export default function WheelAlignmentServices() {
   {
     title: "Full Geometry Alignment",
     desc: "Comprehensive 4-wheel geometry alignment suitable for all vehicle types, ensuring optimal performance and safety.",
-    icon: <FaCar className="h-5 w-5 text-[var(--aircon-icon)]" />,
+    icon: <FaCar className="h-5 w-5 text-[#028BFA]" />,
     points: [
       "Complete geometry inspection",
       "Adjustment of all angles",
@@ -61,7 +61,7 @@ export default function WheelAlignmentServices() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-heading font-bold text-[var(--aircon-heading)] mb-4">
+          <h2 className="text-3xl lg:text-4xl font-heading font-bold text-[#028BFA] mb-4">
             Professional Wheel Alignment Services
           </h2>
           <p className="text-lg text-[var(--aircon-muted)] font-body max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ export default function WheelAlignmentServices() {
                 flex flex-col gap-6 rounded-xl py-6 shadow-sm
                 bg-[var(--aircon-card-bg)] border border-[var(--aircon-card-border)]
                 hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-                hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
+                hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2 active:ring-2 active:ring-[#028BFA] active:ring-offset-2
                 transition-all duration-300
               "
             >
@@ -101,7 +101,7 @@ export default function WheelAlignmentServices() {
                 <ul className="space-y-2">
                   {s.points.map((p, j) => (
                     <li key={j} className="flex items-center text-sm font-body text-[var(--aircon-heading)]/80 dark:text-[var(--aircon-muted)]">
-                      <FaRegCheckCircle className="h-4 w-4 mr-2 flex-shrink-0 text-[var(--aircon-check-icon)]" />
+                      <FaRegCheckCircle className="h-4 w-4 mr-2 flex-shrink-0 text-[#028BFA]" />
                       {p}
                     </li>
                   ))}

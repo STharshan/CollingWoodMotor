@@ -9,7 +9,7 @@ const WhyWheelAlignment = () => {
           
           {/* Left Column */}
           <div>
-            <h2 className="text-4xl font-bold mb-6 leading-snug text-[var(--aircon-heading)]">
+            <h2 className="text-4xl font-bold mb-6 leading-snug text-[#028BFA]">
               Why Choose Professional <br /> Wheel Alignment?
             </h2>
             <p className="text-lg mb-8 text-[var(--aircon-muted)]">
@@ -27,7 +27,7 @@ const WhyWheelAlignment = () => {
                 'Enjoy a smoother, stable ride',
               ].map((text, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <FaCheckCircle className="w-5 h-5 text-[var(--aircon-check-icon)]" />
+                  <FaCheckCircle className="w-5 h-5 text-[#028BFA]" />
                   <span className="text-[var(--aircon-heading)]">{text}</span>
                 </div>
               ))}
@@ -36,7 +36,7 @@ const WhyWheelAlignment = () => {
 
           {/* Right Column */}
           <div className="rounded-xl p-8 shadow-sm border bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
-            <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">
+            <h3 className="text-2xl font-bold mb-4 text-[#028BFA]">
               Signs Your Vehicle Needs Alignment
             </h3>
             <ul className="space-y-4 text-[var(--aircon-muted)]">

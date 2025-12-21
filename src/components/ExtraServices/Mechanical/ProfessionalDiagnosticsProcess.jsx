@@ -8,7 +8,7 @@ export default function ProfessionalDiagnosticsProcess() {
           
           {/* Left Side – Technician Expertise */}
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[var(--aircon-heading)]">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#028BFA]">
               Qualified &amp; Experienced Technicians
             </h2>
 
@@ -51,7 +51,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
           {/* Right Side – Service Intervals */}
           <div className="rounded-lg shadow-md p-8 border transition-colors duration-300 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
-            <h3 className="text-2xl font-bold mb-6 text-[var(--aircon-heading)]">
+            <h3 className="text-2xl font-bold mb-6 text-[#028BFA]">
               Service Intervals
             </h3>
 

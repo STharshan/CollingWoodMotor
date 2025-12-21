@@ -28,7 +28,7 @@ export default function TyreServices() {
         {/* Title + Subhead */}
         <div className="text-center mb-12">
           <h2
-            className="font-heading font-bold tracking-tight mb-3 text-4xl md:text-5xl text-[var(--aircon-heading)]"
+            className="font-heading font-bold tracking-tight mb-3 text-4xl md:text-5xl text-[#028BFA]"
           >
             Professional Tyre Services
           </h2>
@@ -51,6 +51,7 @@ export default function TyreServices() {
                 transition-all duration-300
                 hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
                 hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
+                active:ring-2 active:ring-[#028BFA] active:ring-offset-2
               "
             >
               <div>
