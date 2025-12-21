@@ -27,7 +27,7 @@ const BeltHeader = () => {
               color: "var(--aircon-badge-text)",
             }}
           >
-            Engine Timing Specialists
+            Vehicle Care Specialists
           </span>
 
           {/* Heading */}
@@ -35,7 +35,7 @@ const BeltHeader = () => {
             className="text-4xl lg:text-5xl font-black mb-6"
             style={{ color: "var(--aircon-heading)" }}
           >
-              Timing Belt & Chain Services
+              Car Servicing Services
           </h1>
 
           {/* Subheading */}
@@ -43,7 +43,7 @@ const BeltHeader = () => {
             className="text-xl max-w-3xl mx-auto leading-relaxed"
             style={{ color: "var(--aircon-muted)" }}
           >
-            Professional timing belt replacement and timing chain servicing to keep your engine running in perfect sync. Precision repairs using high-quality parts to prevent costly engine damage and maintain peak performance.
+            Comprehensive car servicing designed to keep your vehicle running at peak performance, improve reliability, and prevent costly repairs. Expert care using premium parts and modern diagnostic tools.
           </p>
 
           {/* CTA Buttons */}

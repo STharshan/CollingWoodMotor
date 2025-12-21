@@ -1,5 +1,9 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import PerfestionalCards from "./Perfestional";
+import EngineBenefits from "./Benefits";
+import EngineCleaningCards from "./WhyServiceAirConditioning";
+import EngineCleaningSigns from "./When";
 
 const BodyServiceServices = () => {
     const location = useLocation();
@@ -42,26 +46,11 @@ const BodyServiceServices = () => {
 
                 {/* Main Content */}
                 <main className="w-full lg:w-2/3 text-gray-800 dark:text-gray-100">
-                    <h1 className="text-2xl lg:text-4xl font-bold mb-4 uppercase tracking-wide">
-                        Your peace of mind
-                    </h1>
-
-                    <p className="mb-6 text-sm lg:text-base">
-                        Keep your car running at its best with our comprehensive and reliable car servicing. At Collingwood motors, we go beyond routine checks—our experienced technicians use top-quality parts and cutting-edge tools to ensure your vehicle stays in peak condition. From maximizing performance to preventing costly repairs, we’re committed to your car’s health and your peace of mind. Trust us to deliver expert care tailored to your vehicle’s needs—schedule your service today!
-                    </p>
-
-                    <div className="border-l-4 border-[#028BFA] p-4 text-sm lg:text-base mt-10 mb-6">
-                        <p className="text-xl">
-                            <strong>CM Pro Tip: </strong>
-                            Regular servicing helps prevent breakdowns, extends your car’s lifespan, and ensures optimal performance, saving you money on costly repairs down the line.
-                        </p>
-                    </div>
-
-                    <ol className="list-disc pl-6 space-y-2 text-sm lg:text-base">
-                        <li><strong>Expert Technicians You Can Rely On: </strong> Our experienced team ensures your car gets the professional care it deserves, keeping it running smoothly and safely</li>
-                        <li><strong>Top-Quality Parts and Tools:</strong> We use premium parts and cutting-edge equipment to maximize your vehicle’s performance and reliability</li>
-                        <li><strong>Proactive Maintenance, Long-Term Savings:</strong> Our thorough servicing helps prevent costly breakdowns, extending your car’s life and saving you money over time.</li>
-                    </ol>
+                    <PerfestionalCards />
+                    <EngineCleaningCards />
+                    <EngineBenefits />
+                    <EngineCleaningSigns />
+                    
                 </main>
             </div>
         </div>
