@@ -26,7 +26,7 @@ const Header = () => {
             ))}
           </div>
           <span className="text-white">4.7/5 from</span>
-          <span className="border border-gray-700 rounded-full px-2 py-1">84+ Reviews</span>
+          <span className="border border-gray-700 rounded-full px-2 py-1">91 Reviews</span>
         </div>
 
         {/* Heading */}

@@ -26,7 +26,7 @@ const ServiceHero = () => {
             ))}
           </div>
           <span className="text-white">4.7/5 from</span>
-          <span className="bg-black border-1 border-gray-900 rounded-full px-2 py-1">84+ Reviews</span>
+          <span className="bg-black border-1 border-gray-900 rounded-full px-2 py-1">91 Reviews</span>
         </div>
 
         {/* Heading */}

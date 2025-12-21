@@ -6,46 +6,46 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const services = [
-  {
+   {
     title: "MECHANICAL",
     desc: "We handle all car and commercial repairs including engines, turbo replacement as well as being clutch specialist.",
-    image: "/carpaint.avif",
+    img: "/auto.jpg",
     path: "/services/mechanical",
   },
   {
-    title: "SERVICE",
-    desc: "Comprehensive car servicing to ensure your vehicle runs smoothly and efficiently!",
-    image: "/gray.avif",
-    path: "/services/service",
+    title: "WINDOW TINT",
+    desc: "We offer professional window tinting for a sleek look and enhanced comfort",
+    img: "/tinit.jpg",
+    path: "/services/window-tint",
+  },
+  {
+    title: "WHEEL ALIGNMENT",
+    desc: "We provide wheel alignment with the added benefit of improved vehicle performance and tire longevity",
+    img: "/tyre.jpg",
+    path: "/services/wheel-alignment",
   },
   {
     title: "MOT",
     desc: "Quick and reliable MOT tests to keep your vehicle roadworthy and compliant!",
-    image: "/carmechanic.avif",
+    img: "/mot.jpg",
     path: "/services/mot",
   },
   {
-    title: "WHEEL ALIGNMENT",
-    desc: "We provide wheel alignment with the added benefit of improved vehicle performance and tire longevity.",
-    image: "/paint.webp",
-    path: "/services/wheel-alignment",
-  },
-  {
-    title: "WINDOW TINT",
-    desc: "We offer professional window tinting for a sleek look and enhanced comfort.",
-    image: "/bule.avif",
-    path: "/services/window-tint",
+    title: "SERVICE",
+    desc: "Comprehensive car servicing to ensure your vehicle runs smoothly and efficiently!",
+    img: "/service.jpg",
+    path: "/services/service",
   },
   {
     title: "BELTS/CHAINS",
-    desc: "Experts in timing chains, timing belts and one of the few wet timing chain specialists.",
-    image: "/shine.webp",
+    desc: "Experts in timing chains, timing belts, and one of the few wet timing chain specialists",
+    img: "/timing.jpg",
     path: "/services/belts-chains",
   },
   {
     title: "DIAGNOSTICS",
-    desc: "We offer the latest dealer-level diagnostics.",
-    image: "/homepaint.avif",
+    desc: "We offer the latest dealer-level diagnostics",
+    img: "/daignostic.jpg",
     path: "/services/diagnostics",
   },
 ];
@@ -83,9 +83,9 @@ export default function ServiceSection() {
               <span>★</span>
               <span>★</span>
             </div>
-            <span className="text-sm font-medium text-white">5/5 from</span>
+            <span className="text-sm font-medium text-white">4.7/5 from</span>
             <span className="bg-secondary border text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
-              84+ Reviews
+              91 Reviews
             </span>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function ServiceSection() {
               data-aos-delay={i * 100}
             >
               <img
-                src={service.image}
+                src={service.img}
                 alt={service.title}
                 className="w-full h-72 md:h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
               />

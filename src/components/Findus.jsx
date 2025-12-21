@@ -22,7 +22,7 @@ export default function FindUs() {
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <p
-          className="text-[#ef5a24] dark:text-[#4ab8e9] font-semibold tracking-widest mb-3 uppercase text-lg"
+          className="text-[#028BFA] font-semibold tracking-widest mb-3 uppercase text-lg"
           data-aos="fade-up"
         >
           Find Us
