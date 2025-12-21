@@ -5,9 +5,9 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const BeltHeader = () => {
   return (
     <section
-      className="relative bg-cover bg-center min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
+      className="relative bg-cover bg-center h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundImage: `url('/gray.avif')`,
+        backgroundImage: `url('/timing.jpg')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -17,72 +17,70 @@ const BeltHeader = () => {
       <div className="absolute inset-0 bg-black opacity-80"></div>
 
       {/* Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          {/* Badge */}
-          <span
-            className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium mb-4"
-            style={{
-              backgroundColor: "var(--aircon-badge-bg)",
-              color: "var(--aircon-badge-text)",
-            }}
-          >
-            Engine Timing Specialists
-          </span>
+      <div className="relative z-10 text-center text-white max-w-3xl mt-20">
+        {/* Rating Badge */}
+        <span
+          className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium mb-4"
+          style={{
+            backgroundColor: "#028BFA",
+            color: "var(--aircon-badge-text)",
+          }}
+        >
+          Engine Timing Specialists
+        </span>
 
-          {/* Heading */}
-          <h1
-            className="text-4xl lg:text-5xl font-black mb-6"
-            style={{ color: "var(--aircon-heading)" }}
-          >
-              Timing Belt & Chain Services
-          </h1>
+        {/* Heading */}
+        <h2 className="text-4xl font-semibold text-[#028BFA] mb-5 uppercase">Timing Belt & Chain Services</h2>
 
-          {/* Subheading */}
-          <p
-            className="text-xl max-w-3xl mx-auto leading-relaxed"
-            style={{ color: "var(--aircon-muted)" }}
-          >
-            Professional timing belt replacement and timing chain servicing to keep your engine running in perfect sync. Precision repairs using high-quality parts to prevent costly engine damage and maintain peak performance.
-          </p>
+        {/* Subtext */}
+        <p className="text-gray-300 text-base md:text-lg font-semibold">
+         Professional timing belt replacement and timing chain servicing to keep your engine running in perfect sync. Precision repairs using high-quality parts to prevent costly engine damage and maintain peak performance.
+        </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            {/* Call Button */}
-            <a href="tel:+441623623759" className="inline-block">
-              <button
-                className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all"
-                style={{
-                  backgroundColor: "var(--aircon-primary)",
-                  color: "#FFFFFF",
-                }}
-              >
-                <FaPhoneAlt className="h-5 w-5" />
-                Book Service: +44 1623 623 759
-              </button>
-            </a>
 
-            {/* Get Quote Button */}
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all duration-300"
+        {/* Info Badges */}
+        {/* <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black" />
+            Dealer Level Diagnostics
+          </div>
+          <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
+            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black " />
+            Vehicle health
+          </div>
+        </div> */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+          {/* Call Button */}
+          <a href="tel:+441623623759" className="inline-block">
+            <button
+              className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all"
               style={{
-                backgroundColor: "var(--aircon-button-bg)",
-                color: "var(--aircon-heading)",
-                border: "1px solid var(--aircon-outline)",
-                textDecoration: "none",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow =
-                  "0 0 0 3px rgba(47,125,51,0.4)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = "none";
+                backgroundColor: "#028BFA",
+                color: "#FFFFFF",
               }}
             >
-              Get Free Quote
-            </a>
-          </div>
+              <FaPhoneAlt className="h-5 w-5" />
+              Book Service: +44 7564 693973            </button>
+          </a>
+
+          {/* Get Quote Button */}
+          <a
+            href="/contact"
+            className="inline-flex bg-gray-300 text-black items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all duration-300"
+            style={{
+              border: "1px solid var(--aircon-outline)",
+              textDecoration: "none",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow =
+                "0 0 0 3px #028BFA";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            Get Free Quote
+          </a>
         </div>
       </div>
     </section>

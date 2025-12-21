@@ -1,12 +1,13 @@
 import React from 'react'
-import MOTHeader from '../../components/ExtraServices/MOT/MOTHeader'
-import MOTService from '../../components/ExtraServices/MOT/MOTServices'
 import GallerySlider from '../../components/GallerySlider'
+import DiagnosticsHeader from '../../components/ExtraServices/MOT/DiagnosticsHeader'
+import DiagnosticsService from '../../components/ExtraServices/MOT/DiagnosticsServices'
+
 const MOT = () => {
     return (
         <div>
-            <MOTHeader />
-            <MOTService />
+            <DiagnosticsHeader />
+            <DiagnosticsService />
             <GallerySlider />
         </div>
     )

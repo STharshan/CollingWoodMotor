@@ -1,13 +1,13 @@
 import React from 'react'
+import DiagnosticsHeader from '../../components/ExtraServices/Window/DiagnosticsHeader';
 import GallerySlider from '../../components/GallerySlider';
-import WindowHeader from '../../components/ExtraServices/Window/WindowHeader';
-import WindowService from '../../components/ExtraServices/Window/WindowServices';
+import DiagnosticsService from '../../components/ExtraServices/Window/DiagnosticsServices';
 
 const Window = () => {
     return (
         <div>
-            <WindowHeader />
-            <WindowService />
+            <DiagnosticsHeader />
+            <DiagnosticsService />
             <GallerySlider />
         </div>
     )

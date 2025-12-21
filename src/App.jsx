@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import TermsConditions from './components/Term';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import GDPRConsent from './components/GDPRButton';
+import ReviewPage from './pages/Review';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/services" element={<Service />} />
+            <Route path='/review' element={<ReviewPage /> } />
             <Route path="/services/mechanical" element={<Mechanical />} />
             <Route path="/services/mot" element={<MOT />} />
             <Route path="/services/wheel-alignment" element={<WheelAlignement />} />

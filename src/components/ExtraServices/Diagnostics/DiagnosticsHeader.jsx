@@ -5,9 +5,9 @@ import { BsArrowRightShort } from 'react-icons/bs';
 const DiagnosticsHeader = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-[80vh] flex items-center justify-center px-4 sm:px-6 lg:px-8"
+      className="relative bg-cover bg-center h-[100vh] flex items-center justify-center px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundImage: `url('/gray.avif')`,
+        backgroundImage: `url('/daignostic.jpg')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -22,7 +22,7 @@ const DiagnosticsHeader = () => {
         <span
           className="inline-flex items-center justify-center rounded-md px-2 py-0.5 text-xs font-medium mb-4"
           style={{
-            backgroundColor: "var(--aircon-badge-bg)",
+            backgroundColor: "#028BFA",
             color: "var(--aircon-badge-text)",
           }}
         >
@@ -30,7 +30,7 @@ const DiagnosticsHeader = () => {
         </span>
 
         {/* Heading */}
-        <h2 className="text-4xl font-semibold text-[#028BFA] mb-5 uppercase">Diagnostics</h2>
+        <h2 className="text-4xl font-semibold text-[#028BFA] mb-5 uppercase">Professional Diagnostic Services</h2>
 
         {/* Subtext */}
         <p className="text-gray-300 text-base md:text-lg font-semibold">
@@ -56,28 +56,25 @@ const DiagnosticsHeader = () => {
             <button
               className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all"
               style={{
-                backgroundColor: "var(--aircon-primary)",
+                backgroundColor: "#028BFA",
                 color: "#FFFFFF",
               }}
             >
               <FaPhoneAlt className="h-5 w-5" />
-              Book Service: +44 1623 623 759
-            </button>
+              Book Service: +44 7564 693973            </button>
           </a>
 
           {/* Get Quote Button */}
           <a
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all duration-300"
+            className="inline-flex bg-gray-300 text-black items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all duration-300"
             style={{
-              backgroundColor: "var(--aircon-button-bg)",
-              color: "var(--aircon-heading)",
               border: "1px solid var(--aircon-outline)",
               textDecoration: "none",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow =
-                "0 0 0 3px rgba(47,125,51,0.4)";
+                "0 0 0 3px #028BFA";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.boxShadow = "none";

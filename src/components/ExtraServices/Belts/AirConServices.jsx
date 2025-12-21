@@ -91,7 +91,7 @@ export default function ProfessionalCleaningProcess() {
                 </span>
               </div>
 
-              <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
+              <div className="flex justify-between items-center gap-8 border-b pb-2 border-[var(--aircon-card-border)]">
                 <span className="text-[var(--aircon-muted)]">
                   Timing Chain Inspection
                 </span>
@@ -100,7 +100,7 @@ export default function ProfessionalCleaningProcess() {
                 </span>
               </div>
 
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between gap-3 items-center">
                 <span className="text-[var(--aircon-muted)]">
                   Preventive Inspection
                 </span>

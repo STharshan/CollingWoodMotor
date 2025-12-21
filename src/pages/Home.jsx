@@ -8,6 +8,7 @@ import PrecisionRepairs from '../components/Home/PrecisionRepairs'
 import ScrollingTestimonials from '../components/Home/ScrollTest'
 import WhyChooseUs from '../components/About/WhyChooseUs'
 import WhatWeOffer from '../components/Home/UnderAbout'
+import FindUs from '../components/Findus'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <AboutSection/>
       <WhyChooseUs />
       <GallerySlider />
+      <FindUs />
     </div>
   )
 }

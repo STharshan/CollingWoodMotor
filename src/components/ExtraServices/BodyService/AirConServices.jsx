@@ -2,16 +2,16 @@
 
 export default function ProfessionalCleaningProcess() {
   return (
-    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+    <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side – Text Content */}
           <div>
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[var(--aircon-heading)]">
-              Professional Repair Process
+              Professional Servicing Process
             </h2>
             <p className="text-lg mb-8 text-[var(--aircon-muted)]">
-              Our precise repair process ensures safe and reliable results
+              Our structured servicing process ensures consistent, high-quality results
             </p>
 
             <div className="space-y-6">
@@ -22,10 +22,10 @@ export default function ProfessionalCleaningProcess() {
                 </div>
                 <div>
                   <p className="font-semibold text-[var(--aircon-heading)]">
-                    Diagnostic Assessment
+                    Vehicle Assessment
                   </p>
                   <p className="text-sm text-[var(--aircon-muted)]">
-                    Comprehensive inspection to identify wear and service requirements
+                    Initial inspection and diagnostic checks to assess vehicle condition
                   </p>
                 </div>
               </div>
@@ -37,10 +37,10 @@ export default function ProfessionalCleaningProcess() {
                 </div>
                 <div>
                   <p className="font-semibold text-[var(--aircon-heading)]">
-                    Precision Repair
+                    Expert Servicing
                   </p>
                   <p className="text-sm text-[var(--aircon-muted)]">
-                    Timing system serviced or replaced using manufacturer-approved methods
+                    Servicing carried out using premium parts and manufacturer standards
                   </p>
                 </div>
               </div>
@@ -52,10 +52,10 @@ export default function ProfessionalCleaningProcess() {
                 </div>
                 <div>
                   <p className="font-semibold text-[var(--aircon-heading)]">
-                    Final Testing
+                    Final Testing &amp; Report
                   </p>
                   <p className="text-sm text-[var(--aircon-muted)]">
-                    Engine timing verified and performance tested before handover
+                    Post-service checks with a clear service report provided
                   </p>
                 </div>
               </div>
@@ -66,15 +66,13 @@ export default function ProfessionalCleaningProcess() {
                   CM Pro Tip
                 </p>
                 <p className="text-sm text-[var(--aircon-muted)]">
-                  While timing chains typically last longer than belts, they still wear over time.
-                  Regular oil changes and maintaining correct oil levels help extend chain life
-                  and prevent expensive repairs.
+                  Regular servicing prevents breakdowns, extends your car’s lifespan, and
+                  maintains optimal performance—saving you money on major repairs in the
+                  long run.
                 </p>
               </div>
             </div>
-
           </div>
-
           {/* Right Side – Recommendations Table */}
           <div className="rounded-lg shadow-md p-8 border transition-colors duration-300 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
             <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">
@@ -84,28 +82,28 @@ export default function ProfessionalCleaningProcess() {
             <div className="space-y-4 text-sm">
               <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
                 <span className="text-[var(--aircon-muted)]">
-                  Timing Belt Replacement
+                 Interim Service
                 </span>
                 <span className="font-semibold text-[var(--aircon-heading)]">
-                  Every 60,000–100,000 miles
+                  Every 6 months or 6,000 miles
                 </span>
               </div>
 
-              <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
+              <div className="flex justify-between items-center gap-6 border-b pb-2 border-[var(--aircon-card-border)]">
                 <span className="text-[var(--aircon-muted)]">
-                  Timing Chain Inspection
+                  Full Service
                 </span>
                 <span className="font-semibold text-[var(--aircon-heading)]">
-                  As required or if warning signs appear
+                  Every 12 months or 12,000 miles
                 </span>
               </div>
 
               <div className="flex justify-between items-center">
                 <span className="text-[var(--aircon-muted)]">
-                  Preventive Inspection
+                  PMajor Service
                 </span>
                 <span className="font-semibold text-[var(--aircon-heading)]">
-                  Annually during servicing
+                 As per manufacturer schedule
                 </span>
               </div>
             </div>

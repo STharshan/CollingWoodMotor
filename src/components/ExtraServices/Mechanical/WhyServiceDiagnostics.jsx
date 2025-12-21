@@ -1,0 +1,94 @@
+import { FaExclamationTriangle, FaCircle } from "react-icons/fa";
+
+const SectionCard = ({ title, description, items }) => (
+  <div
+    className="
+      flex flex-col gap-6 rounded-xl border py-6 shadow-sm 
+      bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)] text-[var(--aircon-heading)]
+      transition-all duration-300
+      hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
+      hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
+    "
+  >
+    <div className="px-6">
+      <div className="flex items-center space-x-2 mb-2">
+        <h3 className="text-xl font-bold">{title}</h3>
+      </div>
+      <p className="text-sm text-[var(--aircon-muted)]">{description}</p>
+    </div>
+    <div className="px-6">
+      <ul className="space-y-2">
+        {items.map((item, idx) => (
+          <li
+            key={idx}
+            className="flex items-start text-sm text-[var(--aircon-heading)]/85 dark:text-[var(--aircon-muted)]"
+          >
+            <FaCircle className="h-2 w-2 mt-1 mr-2 text-[var(--aircon-check-icon)]" />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
+
+export default function WhenDiagnostics() {
+  return (
+    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4 text-[var(--aircon-heading)]">
+            Major Service & Repair Work
+          </h2>
+          <p className="text-lg max-w-2xl mx-auto text-[var(--aircon-muted)]">
+            Specialist services for major components and critical vehicle systems
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8">
+            {/* Cambelt Replacement */}
+            <SectionCard
+              title="Cambelt Replacement"
+              description="Critical timing belt replacement service"
+              items={[
+                "Essential maintenance to prevent catastrophic engine damage",
+                "Work carried out to manufacturer specifications",
+                "High-quality or genuine replacement parts used",
+                "Precision timing and alignment",
+                "Complete peace of mind after service",
+              ]}
+              ctaText="Get Quote"
+            />
+
+            {/* Clutch Repair & Replacement */}
+            <SectionCard
+              title="Clutch Repair & Replacement"
+              description="Complete clutch system service"
+              items={[
+                "Professional clutch diagnostics",
+                "Manual and automatic vehicle support",
+                "Clutch repair or full replacement",
+                "Smooth performance and drivability restored",
+                "Expert workmanship guaranteed",
+              ]}
+              ctaText="Get Quote"
+            />
+
+            {/* Welding Work */}
+            <SectionCard
+              title="Welding Work"
+              description="Professional automotive welding services"
+              items={[
+                "Expert welding for MOT failures",
+                "Bodywork and structural repairs",
+                "Safe and MOT-compliant workmanship",
+                "Guaranteed welding repairs",
+                "Suitable for all vehicle types",
+              ]}
+              ctaText="Get Quote"
+            />
+          </div>
+        </div>
+    </section>
+  );
+}

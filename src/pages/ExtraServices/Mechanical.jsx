@@ -1,14 +1,14 @@
 import React from 'react'
-import MechanicalHeader from '../../components/ExtraServices/Mechanical/MechanicalHeader'
-import MechanicalService from '../../components/ExtraServices/Mechanical/MechanicalServices'
 import GallerySlider from '../../components/GallerySlider'
+import DiagnosticsHeader from '../../components/ExtraServices/Mechanical/DiagnosticsHeader'
+import DiagnosticsService from '../../components/ExtraServices/Mechanical/DiagnosticsServices'
 
 
 const Mechanical = () => {
   return (
     <div>
-      <MechanicalHeader />
-      <MechanicalService />
+      <DiagnosticsHeader />
+      <DiagnosticsService />
       <GallerySlider />
     </div>
   )

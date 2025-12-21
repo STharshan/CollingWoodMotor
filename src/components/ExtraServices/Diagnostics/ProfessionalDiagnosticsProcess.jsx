@@ -2,7 +2,7 @@
 
 export default function ProfessionalDiagnosticsProcess() {
   return (
-    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+    <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Side – Text Content */}

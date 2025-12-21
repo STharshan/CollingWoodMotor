@@ -7,7 +7,7 @@ const ServiceHero = () => {
     <section
       className="relative bg-cover bg-center h-180 flex items-center justify-center px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundImage: `url('/car.avif')`,
+        backgroundImage: `url('/service.jpg')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

@@ -29,7 +29,7 @@ export default function DiagnosticBenefits() {
               bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]
               transition-all duration-300
               hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-              hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+              hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
@@ -50,7 +50,7 @@ export default function DiagnosticBenefits() {
               bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]
               transition-all duration-300
               hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-              hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+              hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
@@ -71,7 +71,7 @@ export default function DiagnosticBenefits() {
               bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]
               transition-all duration-300
               hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-              hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+              hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">
@@ -92,7 +92,7 @@ export default function DiagnosticBenefits() {
               bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]
               transition-all duration-300
               hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-              hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+              hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
             "
           >
             <div className="mx-auto w-12 h-12 rounded-lg flex items-center justify-center bg-[var(--aircon-icon-bg)]">

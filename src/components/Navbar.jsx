@@ -37,6 +37,7 @@ const Navbar = () => {
           <a href="/gallery" className="hover:text-[#028BFA] py-1">GALLERY</a>
           <a href="/pricing" className="hover:text-[#028BFA] py-1">PRICING</a>
           <a href="/services" className="hover:text-[#028BFA] py-1">SERVICES</a>
+          <a href='/review' className='hover:text-[#028BFA] py-1'>REVIEW</a>
         </div>
 
         {/* Theme toggle */}
@@ -63,6 +64,7 @@ const Navbar = () => {
           <a href="/gallery" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">GALLERY</a>
           <a href="/pricing" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">PRICING</a>
           <a href="/services" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">SERVICES</a>
+          <a href="/review" className="block border-b border-gray-500 pb-2 hover:text-[#028BFA]">REVIEW</a>
         </div>
       )}
     </nav>

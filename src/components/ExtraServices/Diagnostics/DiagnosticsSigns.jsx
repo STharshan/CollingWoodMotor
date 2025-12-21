@@ -7,7 +7,7 @@ const SectionCard = ({ title, description, items }) => (
       bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)] text-[var(--aircon-heading)]
       transition-all duration-300
       hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-      hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+      hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
     "
   >
     <div className="px-6">
@@ -34,52 +34,52 @@ const SectionCard = ({ title, description, items }) => (
 
 export default function DiagnosticsSigns() {
   return (
-    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+    <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-[var(--aircon-heading)]">
-            Diagnostic Services We Offer
+            Window Tinting Services
           </h2>
           <p className="text-lg max-w-2xl mx-auto text-[var(--aircon-muted)]">
-            Comprehensive diagnostics for all vehicle systems
+            High-quality tint solutions for all vehicle types
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           <SectionCard
-            title="Engine Diagnostics"
-            description="Identify performance issues and engine faults quickly"
+            title="Standard Window Tinting"
+            description="Professional tint application for everyday comfort and privacy"
             items={[
-              "Engine management fault code reading",
-              "Live data analysis",
-              "Sensor performance testing",
-              "Misfire and fuel system diagnostics",
-              "Emissions-related fault checks",
-              "Warning light investigation",
+              "Heat-reducing tint films",
+              "UV protection for interior surfaces",
+              "Glare reduction for safer driving",
+              "Improved cabin comfort",
+              "Enhanced exterior appearance",
+              "Multiple shade options available",
             ]}
           />
 
           <SectionCard
-            title="Electrical & System Diagnostics"
-            description="Advanced testing for modern vehicle electronics"
+            title="Privacy & Security Tinting"
+            description="Enhanced privacy and protection for your vehicle"
             items={[
-              "ABS & traction control diagnostics",
-              "Airbag & safety system checks",
-              "Battery, alternator & charging system testing",
-              "ECU communication checks",
-              "Wiring and module fault detection",
+              "Increased interior privacy",
+              "Reduced visibility into vehicle",
+              "Shatter-resistant film options",
+              "Added security against break-ins",
+              "Clean, factory-style finish",
             ]}
           />
 
           <SectionCard
-            title="Pre-Repair & Peace-of-Mind Diagnostics"
-            description="Know the issue before committing to repairs"
+            title="UV & Heat Control Tinting"
+            description="Advanced films designed to protect and cool"
             items={[
-              "Pre-repair fault confirmation",
-              "Dashboard warning light investigation",
-              "Performance and efficiency checks",
-              "Pre-trip vehicle health checks",
-              "Clear fault explanations & advice",
+              "Up to 99% UV ray blockage",
+              "Reduced interior heat build-up",
+              "Protects upholstery and dashboards",
+              "Prevents fading and cracking",
+              "Improved air-conditioning efficiency",
             ]}
           />
         </div>

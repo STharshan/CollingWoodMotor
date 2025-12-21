@@ -1,0 +1,101 @@
+'use client'
+
+export default function ProfessionalDiagnosticsProcess() {
+  return (
+    <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Side – Text Content */}
+          <div>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[var(--aircon-heading)]">
+              Professional Tinting Process
+            </h2>
+            <p className="text-lg mb-8 text-[var(--aircon-muted)]">
+              Our window tinting process ensures a flawless, long-lasting result
+            </p>
+
+            <div className="space-y-6">
+              {/* Step 1 */}
+              <div className="flex items-start space-x-4">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                  1
+                </div>
+                <div>
+                  <p className="font-semibold text-[var(--aircon-heading)]">
+                    Consultation &amp; Film Selection
+                  </p>
+                  <p className="text-sm text-[var(--aircon-muted)]">
+                    Discuss tint shade options and legal compliance
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex items-start space-x-4">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                  2
+                </div>
+                <div>
+                  <p className="font-semibold text-[var(--aircon-heading)]">
+                    Precision Installation
+                  </p>
+                  <p className="text-sm text-[var(--aircon-muted)]">
+                    Expert application using professional tools and techniques
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex items-start space-x-4">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                  3
+                </div>
+                <div>
+                  <p className="font-semibold text-[var(--aircon-heading)]">
+                    Final Inspection
+                  </p>
+                  <p className="text-sm text-[var(--aircon-muted)]">
+                    Quality checks to ensure perfect finish and performance
+                  </p>
+                </div>
+              </div>
+
+              {/* Pro Tip */}
+              <div className="mt-6 rounded-lg border border-[var(--aircon-border)] bg-[var(--aircon-soft)] p-4">
+                <p className="font-semibold text-[var(--aircon-heading)] mb-1">
+                  CM Pro Tip
+                </p>
+                <p className="text-sm text-[var(--aircon-muted)]">
+                  Always choose a professional installer to ensure a high-quality
+                  finish that lasts, complies with legal requirements, and
+                  enhances your vehicle’s appearance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side – Recommendations Table */}
+          <div className="rounded-lg shadow-md p-8 border transition-colors duration-300 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
+            <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">
+              Service Recommendations
+            </h3>
+            <div className="space-y-4 text-sm">
+              <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
+                <span className="text-[var(--aircon-muted)]">Window Tinting</span>
+                <span className="font-semibold text-[var(--aircon-heading)]">
+                  Once fitted (long-term upgrade)
+                </span>
+              </div>
+              <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
+                <span className="text-[var(--aircon-muted)]">Tint Inspection</span>
+                <span className="font-semibold text-[var(--aircon-heading)]">
+                  Annually or if damage is visible
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

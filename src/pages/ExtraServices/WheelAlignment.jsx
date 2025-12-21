@@ -1,13 +1,13 @@
 import React from 'react'
 import GallerySlider from '../../components/GallerySlider'
-import WheelHeader from '../../components/ExtraServices/WheelAlignment/WheelHeader'
-import WheelService from '../../components/ExtraServices/WheelAlignment/WheelService'
+import DiagnosticsHeader from '../../components/ExtraServices/WheelAlignment/DiagnosticsHeader'
+import DiagnosticsService from '../../components/ExtraServices/WheelAlignment/DiagnosticsServices'
 
 const WheelAlignement = () => {
     return (
         <div>
-            <WheelHeader />
-            <WheelService />
+            <DiagnosticsHeader />
+            <DiagnosticsService />
             <GallerySlider />
         </div>
     )

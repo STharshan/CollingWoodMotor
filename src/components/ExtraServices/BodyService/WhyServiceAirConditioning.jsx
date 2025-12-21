@@ -50,7 +50,7 @@ const services = [
 
 export default function EngineCleaningCards() {
   return (
-    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
+    <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -72,7 +72,7 @@ export default function EngineCleaningCards() {
                 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]
                 transition-all duration-300
                 hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)]
-                hover:ring-2 hover:ring-[var(--aircon-primary)] hover:ring-offset-2
+                hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2
               "
             >
               <div className="px-6">
@@ -82,7 +82,7 @@ export default function EngineCleaningCards() {
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-base mb-2 text-[var(--aircon-muted)]">
+                <p className="text-base text-left mb-2 text-[var(--aircon-muted)]">
                   {service.description}
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function EngineCleaningCards() {
                   {service.items.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-center text-sm text-[var(--aircon-heading)]/85 dark:text-[var(--aircon-muted)]"
+                      className="flex items-center text-left text-sm text-[var(--aircon-heading)]/85 dark:text-[var(--aircon-muted)]"
                     >
                       <FaCheckCircle className="mr-2 h-4 w-4 text-[var(--aircon-check-icon)]" />
                       {item}
