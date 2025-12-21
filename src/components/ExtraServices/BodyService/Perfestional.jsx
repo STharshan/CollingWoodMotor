@@ -16,7 +16,7 @@ export default function PerfestionalCards() {
         </div>
 
         {/* Cards */}
-        <div className=" text-white text-center">
+        <div className=" text-black dark:text-white text-center">
             At Collingwood Motors, we go beyond basic checks. Our experienced technicians deliver thorough, manufacturer-recommended servicing using high-quality parts and advanced equipment—ensuring your vehicle remains safe, efficient, and dependable.
         </div>
       </div>

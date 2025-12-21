@@ -78,7 +78,7 @@ export default function EngineBenefits() {
               <FaFilter className="w-6 h-6 text-[var(--aircon-icon)]" />
             </div>
             <h3 className="text-lg font-semibold text-[var(--aircon-heading)]">
-            Extended Vehicle Life
+            Extended <br /> Vehicle Life
             </h3>
             <p className="text-sm px-6 text-[var(--aircon-muted)]">
              Protects key components and prolongs lifespan

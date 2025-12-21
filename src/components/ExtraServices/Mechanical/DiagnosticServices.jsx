@@ -1,13 +1,5 @@
 "use client";
 
-import {
-  FaSnowflake,
-  FaThermometerHalf,
-  FaTools,
-  FaShieldAlt,
-  FaRegCheckCircle,
-} from "react-icons/fa";
-
 export default function DiagnosticServices() {
 
   return (

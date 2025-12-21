@@ -17,7 +17,7 @@ export default function ProfessionalDiagnosticsProcess() {
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   1
                 </div>
                 <div>
@@ -32,7 +32,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
               {/* Step 2 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   2
                 </div>
                 <div>
@@ -47,7 +47,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
               {/* Step 3 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   3
                 </div>
                 <div>
@@ -78,7 +78,7 @@ export default function ProfessionalDiagnosticsProcess() {
           <div className="rounded-lg shadow-md p-8 border transition-colors duration-300 bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
             <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">Service Recommendations</h3>
             <div className="space-y-4 text-sm">
-              <div className="flex justify-between items-center border-b pb-2 border-[var(--aircon-card-border)]">
+              <div className="flex justify-between items-center border-b pb-2 gap-13 border-[var(--aircon-card-border)]">
                 <span className="text-[var(--aircon-muted)]">Diagnostic Check</span>
                 <span className="font-semibold text-[var(--aircon-heading)]">As required or when warning lights appear</span>
               </div>

@@ -16,7 +16,7 @@ export default function PerfestionalCards() {
         </div>
 
         {/* Cards */}
-        <div className=" text-white text-center">
+        <div className=" dark:text-white text-black text-center">
             At Collingwood Motors, we specialise in accurate timing system repairs and replacements. Whether your vehicle uses a timing belt or timing chain, our skilled technicians follow manufacturer specifications and use premium components to keep your engine running smoothly and safely.
         </div>
 

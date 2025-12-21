@@ -85,7 +85,7 @@ export default function AutomotiveSign() {
             <div
               key={i}
               className="flex flex-col gap-6 rounded-xl py-6 px-6 shadow-sm border transition-all duration-300 
-                         hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)] hover:ring-2 hover:ring-green-600 hover:ring-offset-2"
+                         hover:shadow-[0_8px_24px_rgba(47,125,51,0.35)] hover:ring-2 hover:ring-[#028BFA] hover:ring-offset-2"
               style={{
                 backgroundColor: "var(--auto-card-bg)",
                 borderColor: "var(--auto-card-border)",

@@ -56,10 +56,12 @@ const DiagnosticsHeader = () => {
 
           {/* Get Quote Button */}
           <a
-            href="/contact"
+            href="https://wa.me/447564693973"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex bg-gray-300 text-black items-center justify-center gap-2 h-10 rounded-md px-6 font-semibold transition-all duration-300"
             style={{
-              border: "1px solid #028BFA",
+              border: "1px solid var(--aircon-outline)",
               textDecoration: "none",
             }}
             onMouseEnter={(e) => {

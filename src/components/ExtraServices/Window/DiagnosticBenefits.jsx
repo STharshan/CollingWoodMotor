@@ -78,7 +78,7 @@ export default function DiagnosticBenefits() {
               <FaFilter className="w-6 h-6 text-[var(--aircon-icon)]" />
             </div>
             <h3 className="text-lg font-semibold text-[var(--aircon-heading)]">
-              Improved Privacy
+              Improved <br /> Privacy
             </h3>
             <p className="text-sm px-6 text-[var(--aircon-muted)]">
               Limits visibility into your vehicle for added security

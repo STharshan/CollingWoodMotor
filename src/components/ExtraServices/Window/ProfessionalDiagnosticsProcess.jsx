@@ -17,7 +17,7 @@ export default function ProfessionalDiagnosticsProcess() {
             <div className="space-y-6">
               {/* Step 1 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   1
                 </div>
                 <div>
@@ -32,7 +32,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
               {/* Step 2 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   2
                 </div>
                 <div>
@@ -47,7 +47,7 @@ export default function ProfessionalDiagnosticsProcess() {
 
               {/* Step 3 */}
               <div className="flex items-start space-x-4">
-                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-white flex items-center justify-center font-bold text-sm">
+                <div className="h-8 w-8 rounded-full bg-[var(--aircon-primary)] text-black dark:text-white flex items-center justify-center font-bold text-sm">
                   3
                 </div>
                 <div>

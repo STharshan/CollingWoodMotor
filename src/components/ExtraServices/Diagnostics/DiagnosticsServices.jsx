@@ -52,7 +52,6 @@ const DiagnosticsService = () => {
                     <DiagnosticBenefits />
                     <WhenDiagnostics />
                     <ProfessionalDiagnosticsProcess />
-
                 </main>
             </div>
         </div>
