@@ -63,7 +63,7 @@ const AboutSection = () => {
           {/* Main image */}
           <div className="relative z-10 rounded-lg shadow-lg overflow-hidden">
             <img
-              src="/green.webp"
+              src="/image.jpg"
               alt="Spray Work"
               className="w-full object-cover rounded-sm"
             />
@@ -77,7 +77,7 @@ const AboutSection = () => {
 
           {/* Overlapping small image */}
           <img
-            src="/carmechanic.avif"
+            src="/service.jpg"
             alt="Detail work"
             className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20 rounded shadow-lg"
             data-aos="zoom-in"

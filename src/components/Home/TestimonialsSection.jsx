@@ -36,7 +36,7 @@ const TestimonialsSection = () => {
               {/* Score */}
               <span className="text-gray-600 dark:text-gray-300 text-sm">4.7/5 from</span>
               {/* Reviews */}
-              <span className="px-3 py-1 rounded-full text-gray-600 dark:text-gray-300 text-xs">84+ Reviews</span>
+              <span className="px-3 py-1 rounded-full text-gray-600 dark:text-gray-300 text-xs">91 Reviews</span>
             </div>
           </div>
         </div>
