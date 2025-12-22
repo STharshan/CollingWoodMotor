@@ -151,7 +151,7 @@ export default function ServiceSection() {
         <button
           onClick={() => scroll("left")}
           className="
-            absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20
+            absolute left-3 sm:left-4 top-1/3 -translate-y-1/2 z-20
             bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
             text-white p-3 rounded-full backdrop-blur-md
             transition shadow-lg
@@ -223,7 +223,7 @@ export default function ServiceSection() {
         <button
           onClick={() => scroll("right")}
           className="
-            absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20
+            absolute right-3 sm:right-4 top-1/3 -translate-y-1/2 z-20
             bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
             text-white p-3 rounded-full backdrop-blur-md
             transition shadow-lg
