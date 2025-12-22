@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useEffect } from "react";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -88,44 +88,79 @@ export default function ServiceSection() {
 
   return (
     <section className="relative w-full bg-white dark:bg-black pt-10 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors">
-      {/* Rating */}
-      <div
-        className="flex justify-center sm:justify-start items-center mb-8 gap-3"
-        data-aos="fade-up"
-      >
-        <span className="text-yellow-400 text-2xl">★ ★ ★ ★ ★</span>
-        <span className="text-gray-600 dark:text-gray-400 text-sm">
-          4.7/5 from 91 Reviews
-        </span>
+      
+      {/* ⭐ REVIEW SECTION */}
+      <div className="w-full flex justify-center mb-8 px-4">
+        <div
+          className="
+            inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3
+            px-4 sm:px-5 py-2
+            rounded-full
+            border border-gray-300 dark:border-gray-700
+            bg-white/80 dark:bg-black/60
+            backdrop-blur-md
+            shadow-sm
+            transition-colors
+          "
+          data-aos="fade-up"
+        >
+          <div className="flex text-yellow-400 space-x-1 leading-none">
+            {[...Array(5)].map((_, i) => (
+              <FaStar key={i} size={14} />
+            ))}
+          </div>
+
+          <span className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-none">
+            4.7/5 from
+          </span>
+
+          <span
+            className="
+              px-2 py-0.5
+              rounded-full
+              text-xs sm:text-sm
+              border border-gray-300 dark:border-gray-600
+              text-gray-800 dark:text-gray-200
+              bg-gray-100 dark:bg-black
+              leading-none
+            "
+          >
+            91 Reviews
+          </span>
+        </div>
       </div>
 
-      {/* Title */}
+      {/* TITLE */}
       <div className="text-center mb-12" data-aos="fade-up">
         <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           Our Services
         </h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          From minor fixes to major repairs, we've got you covered.
+          From minor fixes to major repairs,
+          <br /> we've got you covered.
         </p>
       </div>
 
-      {/* Slider */}
+      {/* SLIDER */}
       <div className="relative max-w-7xl mx-auto" data-aos="fade-up">
-        {/* Side blur (hidden on mobile) */}
+        {/* Side Blur */}
         <div className="hidden sm:block absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent z-10" />
         <div className="hidden sm:block absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white dark:from-black to-transparent z-10" />
 
-        {/* Left Arrow */}
+        {/* LEFT ARROW */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20
-          bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
-          text-white p-3 rounded-full backdrop-blur-md transition shadow-lg"
+          className="
+            absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 z-20
+            bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
+            text-white p-3 rounded-full backdrop-blur-md
+            transition shadow-lg
+          "
         >
           <FaArrowLeft />
         </button>
 
-        {/* Cards */}
+        {/* CARDS */}
         <div
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-4"
@@ -137,7 +172,7 @@ export default function ServiceSection() {
               className="flex-shrink-0 w-[calc(100%-2rem)] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
               style={{ scrollSnapAlign: "start" }}
             >
-              <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all h-full">
+              <div className="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-all h-full">
                 <div className="relative h-60 overflow-hidden">
                   <img
                     src={service.img}
@@ -155,32 +190,25 @@ export default function ServiceSection() {
                     {service.desc}
                   </p>
 
-                  {/* SLASH STYLE BUTTON */}
-                  <Link
-                    to={service.path}
-                    className="group inline-block"
-                  >
+                  <Link to={service.path} className="group inline-block">
                     <span
-                      className="relative bg-[#1a1a1a] dark:bg-black text-white
-    font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3
-    border border-white/10 hover:border-[#028BFA]/60
-    transition overflow-hidden"
+                      className="
+                        relative bg-[#1a1a1a] dark:bg-black text-white
+                        font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3
+                        border border-white/10 hover:border-[#028BFA]/60
+                        transition overflow-hidden
+                      "
                     >
-                      {/* Slash */}
                       <span
-                        className="text-[#028BFA] font-bold text-lg leading-none
-      inline-block transition-transform duration-300
-      group-hover:rotate-75 group-active:rotate-75"
+                        className="
+                          text-[#028BFA] font-bold text-lg leading-none
+                          transition-transform duration-300
+                          group-hover:rotate-75
+                        "
                       >
                         /
                       </span>
-
-                      {/* Text */}
-                      <span
-                        className="tracking-wider text-sm
-                            transition-colors duration-300
-                              group-hover:text-[#028BFA] group-active:text-[#028BFA]"
-                      >
+                      <span className="tracking-wider text-sm group-hover:text-[#028BFA]">
                         EXPLORE
                       </span>
                     </span>
@@ -191,18 +219,21 @@ export default function ServiceSection() {
           ))}
         </div>
 
-        {/* Right Arrow */}
+        {/* RIGHT ARROW */}
         <button
           onClick={() => scroll("right")}
-          className="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20
-          bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
-          text-white p-3 rounded-full backdrop-blur-md transition shadow-lg"
+          className="
+            absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 z-20
+            bg-black/60 dark:bg-white/20 hover:bg-[#028BFA]
+            text-white p-3 rounded-full backdrop-blur-md
+            transition shadow-lg
+          "
         >
           <FaArrowRight />
         </button>
       </div>
 
-      {/* Hide scrollbar */}
+      {/* SCROLLBAR HIDE */}
       <style jsx>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;

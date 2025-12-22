@@ -30,7 +30,7 @@ const PricingHeader = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl md:text-7xl font-semibold text-blue-400 mb-10">PRICING</h2>
+        <h2 className="text-4xl md:text-7xl font-semibold text-white mb-10">PRICING</h2>
 
         {/* Subtext */}
         <p className="text-gray-300 text-base md:text-lg mb-8 font-semibold">

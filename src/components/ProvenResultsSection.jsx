@@ -40,7 +40,7 @@ const ProvenResultsSection = () => {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="w-80  h-80 md:w-150 md:h-80 bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm hover:shadow-md transition duration-300 flex flex-col items-center justify-center"
+            className="w-80  h-80 md:w-150 md:h-80 bg-gray-50 dark:bg-neutral-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-lg hover:shadow-md transition duration-300 flex flex-col items-center justify-center"
           >
             <div className="text-4xl sm:text-5xl font-bold text-black dark:text-white">
               <HighlightSymbol value={stat.value} />
