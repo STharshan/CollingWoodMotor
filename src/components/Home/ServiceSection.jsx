@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const services = [
-   {
+  {
     title: "MECHANICAL",
     desc: "We handle all car and commercial repairs including engines, turbo replacement as well as being clutch specialist.",
     img: "/auto.jpg",
@@ -54,103 +54,114 @@ export default function ServiceSection() {
   const scrollRef = useRef(null);
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
+    });
   }, []);
 
   const scroll = (dir) => {
-    if (scrollRef.current) {
-      const cardWidth = scrollRef.current.firstChild.offsetWidth + 24; // card + gap
-      scrollRef.current.scrollBy({
-        left: dir === "left" ? -cardWidth * 3 : cardWidth * 3,
-        behavior: "smooth",
-      });
-    }
+    if (!scrollRef.current) return;
+
+    const container = scrollRef.current;
+    const gap = 24;
+    let cardsToScroll = 1;
+
+    if (window.innerWidth >= 1024) cardsToScroll = 3;
+    else if (window.innerWidth >= 768) cardsToScroll = 2;
+
+    const cardWidth = container.firstChild?.offsetWidth || 0;
+    const scrollAmount = (cardWidth + gap) * cardsToScroll;
+
+    container.scrollBy({
+      left: dir === "left" ? -scrollAmount : scrollAmount,
+      behavior: "smooth",
+    });
   };
 
   return (
-    <section
-      className="py-20 px-4 bg-black text-white relative overflow-hidden"
-      data-aos="fade-up"
-    >
+    <section className="relative w-full bg-white dark:bg-black pt-8 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors">
       {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-5">
-        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
-          <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
-            <div className="flex text-yellow-400 text-lg">
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-            </div>
-            <span className="text-sm font-medium text-white">4.7/5 from</span>
-            <span className="bg-secondary border text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
-              91 Reviews
-            </span>
-          </div>
+      <div
+        className="flex flex-col sm:flex-row justify-between items-center mb-8 sm:mb-12 gap-4"
+        data-aos="fade-up"
+      >
+        <div className="flex items-center gap-3">
+          <span className="text-yellow-400 text-2xl sm:text-3xl">★ ★ ★ ★ ★</span>
+          <span className="text-gray-600 dark:text-gray-400 font-medium text-sm sm:text-base">
+            4.7/5 from 91 Reviews
+          </span>
         </div>
       </div>
 
       {/* Section Title */}
-      <div className="max-w-7xl mb-20 mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase">
+      <div className="text-center mb-8 sm:mb-12" data-aos="fade-up">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
           Our Services
         </h2>
-        <p className="text-lg dark:text-white mb-8">
-          From minor fixes to major repairs, <br /> we’ve got you covered.
+        <p className="text-gray-600 dark:text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4">
+          From minor fixes to major repairs, we've got you covered.
         </p>
       </div>
 
       {/* Scrollable Cards */}
-      <div className="relative max-w-7xl mx-auto px-2 sm:px-4">
-        {/* Left Shadow */}
-        <div className="absolute left-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-r from-black to-transparent pointer-events-none z-10"></div>
-        {/* Right Shadow */}
-        <div className="absolute right-0 top-0 h-full w-16 sm:w-24 md:w-32 bg-gradient-to-l from-black to-transparent pointer-events-none z-10"></div>
+      <div className="relative max-w-7xl mx-auto" data-aos="fade-up">
+        {/* Side Blur – hidden on mobile */}
+        <div className="hidden sm:block absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent z-10 pointer-events-none" />
+        <div className="hidden sm:block absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white dark:from-black to-transparent z-10 pointer-events-none" />
 
         {/* Left Arrow */}
         <button
           onClick={() => scroll("left")}
-          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA]/80 text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 
+            bg-black/60 dark:bg-white/20 hover:bg-[#028BFA] 
+            text-white p-2 sm:p-3 rounded-full backdrop-blur-md 
+            transition-all duration-300 shadow-lg"
+          aria-label="Scroll left"
         >
-          <FaArrowLeft />
+          <FaArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
 
-        {/* Cards Wrapper */}
+        {/* Cards */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto scrollbar-hide scroll-smooth gap-6 snap-x snap-mandatory relative z-0 pl-6 sm:pl-8 md:pl-10"
+          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-4"
+          style={{ scrollSnapType: "x mandatory" }}
         >
           {services.map((service, i) => (
             <div
               key={i}
-              className="relative snap-start w-[300px] sm:w-[340px] md:w-[400px]  h-[520px] md:h-[570px] flex-shrink-0 border border-white/10 rounded-sm bg-neutral-900 overflow-hidden group flex flex-col"
-              data-aos="fade-up"
-              data-aos-delay={i * 100}
+              className="flex-shrink-0 w-[calc(100%-2rem)] sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              style={{ scrollSnapAlign: "start" }}
             >
-              <img
-                src={service.img}
-                alt={service.title}
-                className="w-full h-72 md:h-80 object-cover grayscale group-hover:grayscale-0 shadow-lg transition-transform duration-300 transform hover:scale-105"
-              />
-              <div className="flex flex-col flex-1 justify-between p-4 relative">
-                <h3 className="font-semibold text-lg mb-2 text-white dark:text-blue-400 drop-shadow">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-white dark:text-gray-200 flex-1">
-                  {service.desc}
-                </p>
-                <Link to={service.path}>
-                  <button className="relative bg-[#1a1a1a] text-white cursor-pointer font-semibold px-8 py-3 rounded-full inline-flex items-center gap-3 transition group overflow-hidden border border-white/10 hover:border-[#028BFA]/50">
-                    <span className="text-[#028BFA] font-bold text-lg leading-none transition-transform duration-300 group-hover:rotate-75 inline-block">
-                      /
-                    </span>
-                    <span className="tracking-wider text-sm group-hover:text-[#028BFA] transition-colors duration-300">
-                      EXPLORE
-                    </span>
-                  </button>
-                </Link>
-              </div>
+              <Link
+                to={service.path}
+                className="block bg-white dark:bg-gray-900 rounded-2xl overflow-hidden 
+                shadow-lg hover:shadow-2xl transition-all duration-500 h-full"
+              >
+                <div className="relative h-56 sm:h-64 overflow-hidden">
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                  <h3 className="absolute bottom-4 left-4 text-white font-bold text-xl sm:text-2xl">
+                    {service.title}
+                  </h3>
+                </div>
+
+                <div className="p-5 sm:p-6">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-4 line-clamp-3">
+                    {service.desc}
+                  </p>
+                  <div className="flex items-center text-[#028BFA] font-semibold text-sm gap-2 hover:gap-3 transition-all">
+                    <span>EXPLORE</span>
+                    <FaArrowRight />
+                  </div>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -158,11 +169,26 @@ export default function ServiceSection() {
         {/* Right Arrow */}
         <button
           onClick={() => scroll("right")}
-          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-[#028BFA] text-white p-3 rounded-full backdrop-blur-md transition-all duration-300"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 
+            bg-black/60 dark:bg-white/20 hover:bg-[#028BFA] 
+            text-white p-2 sm:p-3 rounded-full backdrop-blur-md 
+            transition-all duration-300 shadow-lg"
+          aria-label="Scroll right"
         >
-          <FaArrowRight />
+          <FaArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
+
+      {/* Hide Scrollbar */}
+      <style jsx>{`
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 }
