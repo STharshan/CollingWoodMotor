@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBolt, FaFilter, FaTachometerAlt, FaCheckCircle } from "react-icons/fa";
 
 export default function PerfestionalCards() {
   return (

@@ -4,7 +4,6 @@ import DiagnosticServices from "./DiagnosticServices";
 import DiagnosticsSigns from "./DiagnosticsSigns";
 import DiagnosticBenefits from "./DiagnosticBenefits";
 import ProfessionalDiagnosticsProcess from "./ProfessionalDiagnosticsProcess";
-import WhenDiagnostics from "./WhyServiceDiagnostics";
 
 const DiagnosticsService = () => {
 

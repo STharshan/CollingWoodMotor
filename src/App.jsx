@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -19,8 +20,21 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import GDPRConsent from './components/GDPRButton';
 import ReviewPage from './pages/Review';
 
+// AOS Import
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS globally
 
 function App() {
+  // AOS initialization
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,  // Set your preferred animation duration
+      easing: 'ease-out-cubic', // You can use different easing methods
+      once: true,  // Only trigger animations once
+      mirror: false, // Set to true if you want animations to trigger when they come back into view
+    });
+  }, []);
+
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
@@ -33,7 +47,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/services" element={<Service />} />
-            <Route path='/review' element={<ReviewPage /> } />
+            <Route path='/review' element={<ReviewPage />} />
             <Route path="/services/mechanical" element={<Mechanical />} />
             <Route path="/services/mot" element={<MOT />} />
             <Route path="/services/wheel-alignment" element={<WheelAlignement />} />

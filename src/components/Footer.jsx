@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {

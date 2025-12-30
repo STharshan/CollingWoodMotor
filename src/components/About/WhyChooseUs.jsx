@@ -1,9 +1,6 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { BiSolidTorch } from "react-icons/bi";
 import { FaRegStar } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const features = [
   {
@@ -21,9 +18,6 @@ const features = [
 ];
 
 const WhyChooseUs = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
-  }, []);
 
   return (
     <section

@@ -1,13 +1,9 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const HeroSection = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
-  }, []);
+
 
   return (
     <section className="relative w-full h-screen min-h-[720px] sm:min-h-[600px] lg:h-[90vh] xl:h-[140vh] text-white overflow-hidden">

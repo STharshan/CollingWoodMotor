@@ -1,5 +1,3 @@
-'use client'
-
 export default function ProfessionalCleaningProcess() {
   return (
     <section className="py-1 bg-[var(--aircon-section-bg)] transition-colors duration-300">

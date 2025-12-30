@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaPhoneAlt, FaStar } from 'react-icons/fa';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const DiagnosticsHeader = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBolt, FaFilter, FaTachometerAlt, FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 
 const services = [
   {

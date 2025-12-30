@@ -1,13 +1,7 @@
 "use client";
-import React, { useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const GallerySlider = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
-  }, []);
 
   return (
     <section
@@ -21,6 +15,7 @@ const GallerySlider = () => {
           data-aos="fade-down"
           src="/tittle.png" // Replace with your award logo
           alt="Best of Leicester 2024"
+          loading="lazy"
           className="mx-auto mb-6 w-32 sm:w-40"
         />
 

@@ -3,7 +3,6 @@ import {
   FaChartLine,
   FaShieldAlt,
   FaFilter,
-  FaTachometerAlt,
 } from "react-icons/fa";
 
 export default function DiagnosticBenefits() {

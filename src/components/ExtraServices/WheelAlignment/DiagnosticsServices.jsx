@@ -1,7 +1,5 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import DiagnosticBenefits from "./DiagnosticBenefits";
-import ProfessionalDiagnosticsProcess from "./ProfessionalDiagnosticsProcess";
 import WheelAlignmentServices from "./DiagnosticServices";
 import TyreServices from "./WhyServiceDiagnostics";
 import WhyWheelAlignment from "./ProfessionalDiagnosticsProcess";

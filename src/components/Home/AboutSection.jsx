@@ -1,13 +1,9 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const AboutSection = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true, easing: "ease-in-out" });
-  }, []);
+
 
   return (
     <section className="bg-white dark:bg-black px-4 py-16 md:py-24 transition-colors duration-300">
@@ -65,6 +61,7 @@ const AboutSection = () => {
             <img
               src="/image.jpg"
               alt="Spray Work"
+              loading="lazy"
               className="w-full object-cover rounded-sm"
             />
 
@@ -79,6 +76,7 @@ const AboutSection = () => {
           <img
             src="/service.jpg"
             alt="Detail work"
+            loading="lazy"
             className="absolute bottom-5 -left-5 w-32 md:w-30 h-30 z-20 rounded shadow-lg"
             data-aos="zoom-in"
             data-aos-delay="200"

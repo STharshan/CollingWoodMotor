@@ -1,9 +1,4 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-const testimonials = [
+export const testimonials = [
   {
     quote:
       "Excellent service, my son and I both use Collingwood Motors, can often fit you in at short notice. They fixed an issue on my car so quickly, they actually took a video to show me that the job was done. Definitely recommend and easy to get to. Bus routes nearby if you need to drop your car off too.",
@@ -47,52 +42,3 @@ They took good care of my Mini, and I'd not hesitate to recommend them.`,
   },
 
 ];
-
-const ScrollingTestimonials = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
-  }, []);
-
-  return (
-    <section
-      className="relative bg-black/90 py-26 overflow-hidden"
-      data-aos="fade-up"
-    >
-      {/* Left Shadow */}
-      <div className="absolute left-0 top-0 h-full w-16 bg-linear-to-r from-black/90 to-transparent pointer-events-none z-10"></div>
-      {/* Right Shadow */}
-      <div className="absolute right-0 top-0 h-full w-16 bg-linear-to-l from-black/90 to-transparent pointer-events-none z-10"></div>
-
-      <div className="w-[200%] animate-scroll flex space-x-6">
-        {[...testimonials, ...testimonials].map((t, index) => (
-          <div
-            key={index}
-            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black dark:bg-black dark:text-white p-6 rounded shadow-md"
-          >
-            <p className="text-sm mb-4">"{t.quote}"</p>
-            <p className="font-bold text-sm uppercase">{t.author}</p>
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              Google Reviews
-            </p>
-          </div>
-        ))}
-      </div>
-
-      <style jsx="true">{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-      `}</style>
-    </section>
-  );
-};
-
-export default ScrollingTestimonials;

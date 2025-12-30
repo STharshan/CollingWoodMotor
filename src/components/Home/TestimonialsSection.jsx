@@ -1,12 +1,6 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const TestimonialsSection = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
-  }, []);
 
   return (
     <section className="bg-white dark:bg-black px-4 py-16 transition-colors">

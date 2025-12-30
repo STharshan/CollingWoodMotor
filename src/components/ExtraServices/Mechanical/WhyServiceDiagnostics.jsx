@@ -1,4 +1,4 @@
-import { FaExclamationTriangle, FaCircle } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 
 const SectionCard = ({ title, description, items }) => (
   <div

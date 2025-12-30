@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaArrowRight, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const faqs = [
   {

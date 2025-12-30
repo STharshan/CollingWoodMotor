@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaPhoneAlt, FaStar } from 'react-icons/fa';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const BeltHeader = () => {
   return (
@@ -37,18 +36,6 @@ const BeltHeader = () => {
           Professional timing belt replacement and timing chain servicing to keep your engine running in perfect sync. Precision repairs using high-quality parts to prevent costly engine damage and maintain peak performance.
         </p>
 
-
-        {/* Info Badges */}
-        {/* <div className="flex flex-wrap justify-center gap-4">
-          <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black" />
-            Dealer Level Diagnostics
-          </div>
-          <div className="flex items-center gap-2 font-semibold px-4 py-2 rounded-md">
-            <BsArrowRightShort size={20} className="bg-[#028BFA] text-black " />
-            Vehicle health
-          </div>
-        </div> */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           {/* Call Button */}
           <a href="tel:+441623623759" className="inline-block">

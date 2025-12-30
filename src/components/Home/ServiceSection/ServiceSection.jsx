@@ -1,71 +1,11 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-const services = [
-  {
-    title: "MECHANICAL",
-    desc:
-      "We handle all car and commercial repairs including engines, turbo replacement as well as being clutch specialist.",
-    img: "/auto.jpg",
-    path: "/services/mechanical",
-  },
-  {
-    title: "WINDOW TINT",
-    desc:
-      "We offer professional window tinting for a sleek look and enhanced comfort",
-    img: "/tinit.jpg",
-    path: "/services/window-tint",
-  },
-  {
-    title: "WHEEL ALIGNMENT",
-    desc:
-      "We provide wheel alignment with the added benefit of improved vehicle performance and tire longevity",
-    img: "/tyre.jpg",
-    path: "/services/wheel-alignment",
-  },
-  {
-    title: "MOT",
-    desc:
-      "Quick and reliable MOT tests to keep your vehicle roadworthy and compliant!",
-    img: "/mot.jpg",
-    path: "/services/mot",
-  },
-  {
-    title: "SERVICE",
-    desc:
-      "Comprehensive car servicing to ensure your vehicle runs smoothly and efficiently!",
-    img: "/service.jpg",
-    path: "/services/service",
-  },
-  {
-    title: "BELTS/CHAINS",
-    desc:
-      "Experts in timing chains, timing belts, and one of the few wet timing chain specialists",
-    img: "/timing.jpg",
-    path: "/services/belts-chains",
-  },
-  {
-    title: "DIAGNOSTICS",
-    desc: "We offer the latest dealer-level diagnostics",
-    img: "/daignostic.jpg",
-    path: "/services/diagnostics",
-  },
-];
+import { services } from "../../Home/ServiceSection/servicesData";
 
 export default function ServiceSection() {
   const scrollRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-  }, []);
 
   const scroll = (dir) => {
     if (!scrollRef.current) return;
@@ -176,6 +116,7 @@ export default function ServiceSection() {
                 <div className="relative h-60 overflow-hidden">
                   <img
                     src={service.img}
+                    loading="lazy"
                     alt={service.title}
                     className="w-full h-full object-cover hover:scale-110 transition duration-700"
                   />

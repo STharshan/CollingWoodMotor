@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -72,6 +71,7 @@ const ServicesPage = () => {
               <div className="relative overflow-hidden">
                 <img
                   src={service.img}
+                  loading="lazy"
                   alt={service.title}
                   className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-110"
                 />
